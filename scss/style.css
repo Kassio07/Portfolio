@@ -13,7 +13,7 @@ header .menuLateral-container {
   flex-direction: column;
   position: fixed;
   gap: 20px;
-  z-index: 2;
+  z-index: 998;
 }
 header .menuLateral-container .menuIMG {
   display: flex;
@@ -107,6 +107,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   bottom: -5px;
   right: 0px;
   border-radius: 10px;
+}
+
+.openClose {
+  display: block;
 }
 
 @media (max-width: 960px) {
@@ -219,10 +223,44 @@ main {
   display: flex;
   flex-direction: row;
 }
+.containerGeral .hamburguerMenu {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  display: none;
+  font-size: 1.8rem;
+  z-index: 999;
+}
+.containerGeral .hamburguerMenu i {
+  cursor: pointer;
+}
+.containerGeral .hamburguerMenu .fa-xmark {
+  display: none;
+}
 
 @media (max-width: 960px) {
   main {
     width: 100vw;
     margin-left: 0px;
+  }
+  .containerGeral {
+    display: flex;
+    flex-direction: row;
+  }
+  .containerGeral .hamburguerMenu {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    display: block;
+    font-size: 1.8rem;
+    z-index: 999;
+  }
+  .containerGeral .hamburguerMenu i {
+    cursor: pointer;
+  }
+  .containerGeral .hamburguerMenu .fa-xmark {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
