@@ -1,4 +1,7 @@
+// Menu Lateral
+
 header {
+
   .menuLateral-container {
     background-color: $primary-black;
     width: 280px;
@@ -8,7 +11,7 @@ header {
     flex-direction: column;
     position: fixed;
     gap: 20px;
-    z-index: 2;
+    z-index: 998;
     // Imagem menu
     .menuIMG {
       display: flex;
@@ -116,7 +119,9 @@ header {
     }
   }
 }
-
+.openClose{
+  display: block;
+}
 
 
 // Media Query 960px
