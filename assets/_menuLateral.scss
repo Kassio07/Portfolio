@@ -1,0 +1,128 @@
+header {
+  .menuLateral-container {
+    background-color: $primary-black;
+    width: 280px;
+    height: 100vh;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 20px;
+    z-index: 2;
+    // Imagem menu
+    .menuIMG {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      .imgContainer {
+        width: 120px;
+        height: 120px;
+        border: 8px solid $gray-dark;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+      }
+      img {
+        border-radius: 50%;
+        position: absolute;
+        right: 50%;
+        height: 125px;
+        transform: translateX(50%);
+      }
+
+      span {
+        color: $primary-light;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+
+    // Icons Menu
+    .menuIcons {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        li {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: $gray-dark;
+
+          a {
+            color: $primary-light;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            i {
+              transition: all 0.2s;
+            }
+          }
+          a:hover > i {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+
+    //Menu Links
+    .menuLinks {
+      padding-top: 40px;
+      padding-left: 10px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        li {
+          width: 100%;
+          text-align: left;
+          padding: 20px 0 0 10px;
+          a {
+            font-size: 1.1rem;
+            color: gray;
+            position: relative;
+            i {
+              padding-right: 10px;
+            }
+          }
+
+          a:hover::after {
+            content: "";
+            width: 30px;
+            height: 3px;
+            background-color: $primary-light;
+            position: absolute;
+            bottom: -5px;
+            right: 0px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// Media Query 960px
+
+@media (max-width: 960px){
+  header{
+    display: none;
+  }
+}

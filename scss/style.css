@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .menuLateral-container {
+  background-color: #040B14;
+  width: 280px;
+  height: 100vh;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 20px;
+  z-index: 2;
+}
+header .menuLateral-container .menuIMG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+header .menuLateral-container .menuIMG .imgContainer {
+  width: 120px;
+  height: 120px;
+  border: 8px solid #292f37;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+header .menuLateral-container .menuIMG img {
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  height: 125px;
+  transform: translateX(50%);
+}
+header .menuLateral-container .menuIMG span {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+header .menuLateral-container .menuIcons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .menuLateral-container .menuIcons ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #292f37;
+}
+header .menuLateral-container .menuIcons ul li a {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+header .menuLateral-container .menuIcons ul li a i {
+  transition: all 0.2s;
+}
+header .menuLateral-container .menuIcons ul li a:hover > i {
+  font-size: 1.7rem;
+}
+header .menuLateral-container .menuLinks {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+header .menuLateral-container .menuLinks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .menuLateral-container .menuLinks ul li {
+  width: 100%;
+  text-align: left;
+  padding: 20px 0 0 10px;
+}
+header .menuLateral-container .menuLinks ul li a {
+  font-size: 1.1rem;
+  color: gray;
+  position: relative;
+}
+header .menuLateral-container .menuLinks ul li a i {
+  padding-right: 10px;
+}
+header .menuLateral-container .menuLinks ul li a:hover::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  border-radius: 10px;
+}
+
+@media (max-width: 960px) {
+  header {
+    display: none;
+  }
+}
+.imgTopo {
+  background-image: url("../img/informatica03.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: 50% 58%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.imgTopo .opac {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+.imgTopo .titleTop {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.imgTopo h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px #000;
+  opacity: 0.9;
+}
+.imgTopo span {
+  color: #fff;
+  text-shadow: 2px 4px 6px #000;
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+
+.about {
+  padding: 80px 20px;
+}
+
+@media (max-width: 960px) {
+  .imgTopo .titleTop {
+    top: 85%;
+    left: 25px;
+  }
+  .imgTopo h1 {
+    font-size: 2rem;
+  }
+  .imgTopo span {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 540px) {
+  .imgTopo .titleTop {
+    top: 85%;
+  }
+  .imgTopo h1 {
+    font-size: 1.5rem;
+  }
+  .imgTopo span {
+    font-size: 0.9rem;
+  }
+}
+body {
+  font-family: "poppins", serif;
+  background-color: #fff;
+  font-style: normal;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+p {
+  font-size: 1rem;
+}
+
+main {
+  background-color: red;
+  width: calc(100vw - 280px);
+  margin-left: 280px;
+  top: 0;
+}
+
+.containerGeral {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 960px) {
+  main {
+    width: 100vw;
+    margin-left: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

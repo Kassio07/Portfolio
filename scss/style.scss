@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../assets/color";
+@import "../assets/menuLateral";
+@import "../assets/about";
+
+body {
+  font-family: "poppins", serif;
+  background-color: $primary-light;
+  font-style: normal;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-size: 1rem;
+}
+
+main {
+  background-color: red;
+  width: calc(100vw - 280px);
+  margin-left: 280px;
+  top: 0;
+}
+
+.containerGeral {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 960px) {
+  main {
+    width: 100vw;
+    margin-left: 0px;
+  }
+}
