@@ -1,6 +1,4 @@
 # Portfólio
- Site pessoal onde apresento um pouco sobre mim e sobre meus projetos pessoais.
-
   <h1 align="center">Portfólio</h1>
  <h2 align="center">Site pessoal onde apresento um pouco sobre mim e sobre meus projetos pessoais.</h2>
 
