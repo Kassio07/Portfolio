@@ -40,7 +40,7 @@ p {
 }
 
 main {
-  background-color: red;
+  background-color: $primary-light;
   width: calc(100vw - 280px);
   margin-left: 280px;
   top: 0;
