@@ -69,10 +69,24 @@ header .menuLateral-container .menuIcons ul li a {
   border-radius: 50%;
 }
 header .menuLateral-container .menuIcons ul li a i {
-  transition: all 0.2s;
+  transition: all 0.3s;
+  transform: scale(1);
 }
 header .menuLateral-container .menuIcons ul li a:hover > i {
-  font-size: 1.7rem;
+  transform: scale(1.7);
+  color: #fff;
+}
+header .menuLateral-container .menuIcons ul li:nth-child(1) a:hover {
+  background-color: #FE3F31;
+}
+header .menuLateral-container .menuIcons ul li:nth-child(2) a:hover {
+  background-color: #0865FE;
+}
+header .menuLateral-container .menuIcons ul li:nth-child(3) a:hover {
+  background-color: #000;
+}
+header .menuLateral-container .menuIcons ul li:nth-child(4) a:hover {
+  background-color: #0865FE;
 }
 header .menuLateral-container .menuLinks {
   padding-top: 40px;

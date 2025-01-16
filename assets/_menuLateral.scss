@@ -71,11 +71,25 @@ header {
             height: 40px;
             border-radius: 50%;
             i {
-              transition: all 0.2s;
+              transition: all 0.3s;
+              transform: scale(1);
             }
           }
           a:hover > i {
-            font-size: 1.7rem;
+            transform: scale(1.7);
+            color: #fff;
+          }
+          &:nth-child(1) a:hover{
+            background-color: #FE3F31;
+          }
+          &:nth-child(2) a:hover{
+            background-color:#0865FE;
+          }
+          &:nth-child(3) a:hover{
+            background-color: #000;
+          }
+          &:nth-child(4) a:hover{
+            background-color: #0865FE;
           }
         }
       }
