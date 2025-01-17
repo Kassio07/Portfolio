@@ -369,10 +369,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   width: 60%;
 }
 .skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-5, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-5 {
-  width: 40%;
+  width: 50%;
 }
 .skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-6, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-6 {
-  width: 40%;
+  width: 50%;
 }
 .skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-7, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-7 {
   width: 70%;
