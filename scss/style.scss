@@ -52,22 +52,9 @@ main {
 .containerGeral {
   display: flex;
   flex-direction: row;
-  .hamburguerMenu {
-    position: fixed;
-    top: 10px;
-    right: 15px;
-    color: #fff;
-    display: none;
-    font-size: 1.8rem;
-    z-index: 999;
-    i {
-      cursor: pointer;
-    }
-   
-    .fa-xmark {
-      display: none;
-    }
-  }
+}
+.hamburguerMenu {
+  display: none;
 }
 
 // Media Queries 960px 
@@ -76,15 +63,12 @@ main {
     width: 100vw;
     margin-left: 0px;
   }
-
   .containerGeral {
-    display: flex;
-    flex-direction: row;
     .hamburguerMenu {
       position: fixed;
       top: 10px;
       right: 15px;
-      color: #fff;
+      color: $tertiary-colorLight;
       display: block;
       font-size: 1.8rem;
       z-index: 999;

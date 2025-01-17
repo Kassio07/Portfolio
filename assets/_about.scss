@@ -45,15 +45,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .aboutInfo-container{
+  .aboutInfo-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    .about-col1{
+    .about-col1 {
       flex: 0.5;
       padding-right: 35px;
-      img{
+      img {
         transition: transform 0.5s ease, box-shadow 0.3s ease;
       }
       img:hover {
@@ -61,44 +61,42 @@
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* sombra mais forte no hover */
       }
     }
-    .about-col2{
+    .about-col2 {
       flex: 1;
       display: flex;
       flex-direction: column;
       gap: 20px;
-     
 
-      .listSobre{
-       display: flex;
-       justify-content:space-between;
-       align-items: center;
-       padding-bottom: 20px;
-
-       ul{
+      .listSobre {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
 
-        li{
-          a{
-            color: $primary-black;
-            font-size: 0.9rem;
-            i{
-              padding-right: 10px;
-              font-size: 1.5rem;
-              color: $tertiary-colorLight;
-            }
-            strong{
-              padding-right: 10px;
-              font-weight: 600;
+        ul {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          li {
+            a {
+              color: $primary-black;
+              font-size: 0.9rem;
+              i {
+                padding-right: 10px;
+                font-size: 1.5rem;
+                color: $tertiary-colorLight;
+              }
+              strong {
+                padding-right: 10px;
+                font-weight: 500;
+              }
             }
           }
         }
-       }
       }
-      .aboutText{
-
-        p{
-          color:$gray-dark;
+      .aboutText {
+        p {
+          color: $gray-dark;
           font-size: 1rem;
           font-weight: 400;
         }
@@ -107,35 +105,34 @@
   }
 }
 
-.titleH2{
+.titleH2 {
   font-size: 1.6rem;
   font-weight: 600;
 }
-.container{
+.container {
   max-width: 1400px;
   padding: 70px 30px;
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.title{
-  .titleSection{
+.title {
+  .titleSection {
     padding: 0 0 15px 0;
     font-weight: 700;
     font-size: 1.8rem;
     position: relative;
     color: $primary-black;
   }
-  .subTitleSection{
+  .subTitleSection {
     padding: 20px 0 70px 0;
     font-weight: 400;
     color: $gray-dark;
   }
-
 }
 
-.titleSection::after{
+.titleSection::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -148,26 +145,22 @@
 }
 
 // Media query 1300
-@media (max-width:1300px){
-  .about{
-
-    .aboutInfo-container{
+@media (max-width: 1300px) {
+  .about {
+    .aboutInfo-container {
       flex-direction: column;
       gap: 80px;
-      .about-col1{
+      .about-col1 {
         padding-right: 0px;
       }
-      .about-col2{
-
-        p{
+      .about-col2 {
+        p {
           font-size: 1rem;
         }
-        .listSobre{
-          ul{
-
-            li{
-
-              a{
+        .listSobre {
+          ul {
+            li {
+              a {
                 font-size: 0.9rem;
               }
             }
@@ -176,26 +169,24 @@
       }
     }
   }
- 
 }
 
 // Media Query  1600px
 
-@media (min-width: 1600px){
+@media (min-width: 1600px) {
   // top do site
-  .imgTopo{
+  .imgTopo {
     .titleTop {
       left: 180px;
     }
-    h1{
+    h1 {
       font-size: 3rem;
     }
   }
   //container do site
-  .container{
+  .container {
     max-width: 1600px;
     padding: 70px 150px;
-
   }
 }
 
@@ -228,6 +219,18 @@
     }
     span {
       font-size: 0.9rem;
+    }
+  }
+
+  .about {
+    .aboutInfo-container {
+      gap: 35px;
+      .about-col2 {
+        .listSobre {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
     }
   }
 }
