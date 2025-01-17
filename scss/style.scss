@@ -19,6 +19,8 @@ body {
   justify-content: center;
 }
 
+// Reset CSS
+
 a {
   text-decoration: none;
 }
@@ -68,6 +70,7 @@ main {
   }
 }
 
+// Media Queries 960px 
 @media (max-width: 960px) {
   main {
     width: 100vw;
