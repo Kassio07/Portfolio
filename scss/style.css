@@ -200,15 +200,16 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .about .aboutInfo-container .about-col2 .listSobre {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
 }
 .about .aboutInfo-container .about-col2 .listSobre ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 25px 0;
 }
 .about .aboutInfo-container .about-col2 .listSobre ul li a {
   color: #040B14;
+  font-size: 0.9rem;
 }
 .about .aboutInfo-container .about-col2 .listSobre ul li a i {
   padding-right: 10px;
@@ -217,6 +218,12 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .about .aboutInfo-container .about-col2 .listSobre ul li a strong {
   padding-right: 10px;
+  font-weight: 600;
+}
+.about .aboutInfo-container .about-col2 .aboutText p {
+  color: #292f37;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .titleH2 {
@@ -303,9 +310,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   }
   .imgTopo span {
     font-size: 0.9rem;
-  }
-  .about .aboutInfo-container .about-col2 .listSobre {
-    flex-direction: column;
   }
 }
 body {

@@ -70,19 +70,18 @@
 
       .listSobre{
        display: flex;
-       justify-content: space-between;
+       justify-content:space-between;
+       align-items: center;
+       padding-bottom: 20px;
 
        ul{
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        padding: 25px 0;
-        
-      
 
         li{
           a{
             color: $primary-black;
+            font-size: 0.9rem;
             i{
               padding-right: 10px;
               font-size: 1.5rem;
@@ -90,10 +89,19 @@
             }
             strong{
               padding-right: 10px;
+              font-weight: 600;
             }
           }
         }
        }
+      }
+      .aboutText{
+
+        p{
+          color:$gray-dark;
+          font-size: 1rem;
+          font-weight: 400;
+        }
       }
     }
   }
@@ -219,20 +227,6 @@
     }
     span {
       font-size: 0.9rem;
-    }
-  }
-
-  .about{
-
-    .aboutInfo-container{
-    
-      .about-col1{
-      }
-      .about-col2{
-        .listSobre{
-         flex-direction: column;
-        }
-      }
     }
   }
 }
