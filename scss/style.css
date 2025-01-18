@@ -400,8 +400,8 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .qualification-content {
   display: flex;
   flex-direction: column;
-  width: 500px;
   padding-top: 100px;
+  max-width: 500px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -425,7 +425,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 500px;
+  max-width: auto;
 }
 .qualification-content .qualification-data .qualification-text {
   display: flex;
@@ -467,6 +467,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   flex: 1;
 }
 
+@media (max-width: 720px) {
+  .qualification-content {
+    width: 100%;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
