@@ -408,7 +408,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .qualification-content .qualification-titles {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 80px;
   padding-bottom: 30px;
 }
 .qualification-content .qualification-titles span {
