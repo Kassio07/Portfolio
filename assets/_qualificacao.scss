@@ -5,16 +5,16 @@
   max-width: 500px;
   margin-left: 50%;
   transform: translateX(-50%);
-  .qualification-titles{
+  .qualification-titles {
     display: flex;
     justify-content: center;
     gap: 70px;
     padding-bottom: 30px;
-    span{
+    span {
       font-size: 1.1rem;
       font-weight: 600;
       color: $primary-black;
-      i{
+      i {
         padding-right: 10px;
         font-size: 1.7rem;
         color: $primary-gray;
@@ -26,7 +26,7 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: auto;
-    
+
     .qualification-text {
       display: flex;
       flex-direction: column;
@@ -37,35 +37,35 @@
         color: $primary-black;
         font-weight: 500;
       }
-      span{
+      span {
         font-size: 0.7rem;
         color: #9a9a9a;
         font-weight: 400;
-        i{
+        i {
           padding-right: 5px;
         }
       }
     }
 
-    .qualification-quite{
+    .qualification-quite {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0px 30px 0 0;
-      .qualification-circle{
+      .qualification-circle {
         width: 15px;
         height: 15px;
         background-color: $tertiary-colorLight;
         border-radius: 50%;
       }
-      .qualification-line{
+      .qualification-line {
         width: 1.5px;
         height: 80px;
         background-color: #9a9a9a;
       }
     }
 
-    .qualification-white{
+    .qualification-white {
       flex: 1;
     }
   }
@@ -73,8 +73,9 @@
 
 // Media Queries 720px
 
-@media (max-width:720px){
-    .qualification-content{
-      width: 100%;
+@media (max-width: 720px) {
+  .qualification-content {
+    width: 100%;
+    padding-top: 50px;
   }
 }
