@@ -8,6 +8,11 @@
 @import "../assets/menuLateral";
 @import "../assets/about";
 @import "../assets/skills";
+@import "../assets/qualificacao";
+
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "poppins", serif;
@@ -47,6 +52,7 @@ main {
   width: calc(100vw - 280px);
   margin-left: 280px;
   top: 0;
+
 }
 
 .containerGeral {
