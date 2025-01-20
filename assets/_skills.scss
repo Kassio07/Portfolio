@@ -49,13 +49,13 @@
             }
 
             .item-3 {
-              width: 80%;
+              width: 60%;
             }
             .item-4 {
-              width: 50%;
+              width: 80%;
             }
             .item-5 {
-              width: 70%;
+              width: 40%;
             }
           }
         }
@@ -74,6 +74,7 @@
           font-weight: 600;
           padding: 0px 0 30px 0;
           border: none;
+
           cursor: pointer;
           border-radius: 4px;
           width: 100%;
@@ -93,11 +94,13 @@
           a {
             color: black;
             display: block;
+            padding-bottom: 10px;
           }
         }
 
         &:focus-within .dropdown-content {
           display: block;
+          height: 300px;
         }
       }
     }

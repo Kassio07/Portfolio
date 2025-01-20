@@ -1,9 +1,9 @@
-
+// Seleciona os botões de abrir e fechar o menu
 let menu = document.querySelector('header');
 let hamburguerOn = document.querySelector(".fa-solid.fa-bars");
 let hamburguerOff = document.querySelector('.fa-solid.fa-xmark');
 
-
+// Adiciona um evento de click no botão de abrir o menu
 hamburguerOn.addEventListener("click", () => {
     if (hamburguerOn) {
         hamburguerOn.style.display = 'none';
