@@ -323,6 +323,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .skillsConatiner {
   background-color: #dddddd;
+  height: 600px;
 }
 .skillsConatiner .skills {
   display: flex;
@@ -332,20 +333,18 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 35px;
 }
-.skillsConatiner .skills .load--conatiner .load-col1, .skillsConatiner .skills .load--conatiner .load-col2 {
+.skillsConatiner .skills .load--conatiner .load-col1 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item, .skillsConatiner .skills .load--conatiner .load-col2 .load-item {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item :nth-child(1), .skillsConatiner .skills .load--conatiner .load-col2 .load-item :nth-child(1) {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item :nth-child(1) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -354,42 +353,67 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   font-weight: 600;
   padding-bottom: 3px;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load {
   width: 100%;
   border-radius: 2px;
   border: none;
   background-color: #c4c4c4;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .load-color, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .load-color {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .load-color {
   background-color: #00c9d2;
   height: 10px;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-1, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-1 {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-1 {
   width: 90%;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-2, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-2 {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-2 {
   width: 80%;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-3, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-3 {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-3 {
   width: 80%;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-4, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-4 {
-  width: 60%;
-}
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-5, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-5 {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-4 {
   width: 50%;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-6, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-6 {
-  width: 50%;
-}
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-7, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-7 {
+.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-5 {
   width: 70%;
 }
-.skillsConatiner .skills .load--conatiner .load-col1 .load-item .load .item-8, .skillsConatiner .skills .load--conatiner .load-col2 .load-item .load .item-8 {
-  width: 40%;
+.skillsConatiner .skills .load--conatiner .dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
 }
-.skillsConatiner .skills .load--conatiner .load-col2 {
-  flex: 1;
+.skillsConatiner .skills .load--conatiner .dropdown button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+  color: #292f37;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0px 0 30px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+.skillsConatiner .skills .load--conatiner .dropdown button i {
+  padding-right: 10px;
+  font-size: 1.7rem;
+  color: #00c9d2;
+}
+.skillsConatiner .skills .load--conatiner .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding-right: 20px;
+}
+.skillsConatiner .skills .load--conatiner .dropdown .dropdown-content a {
+  color: black;
+  display: block;
+}
+.skillsConatiner .skills .load--conatiner .dropdown:focus-within .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 540px) {
