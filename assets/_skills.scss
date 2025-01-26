@@ -1,7 +1,6 @@
 // Estilização da seção de habilidades / skills
 .skillsConatiner {
   background-color: $primary-gray;
-  height: 600px;
 
   .skills {
     display: flex;
@@ -11,6 +10,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      height: 300px;
       .load-col1{
         flex: 1;
         display: flex;
@@ -100,7 +100,6 @@
 
         &:focus-within .dropdown-content {
           display: block;
-          height: 300px;
         }
       }
     }

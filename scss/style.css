@@ -323,7 +323,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .skillsConatiner {
   background-color: #dddddd;
-  height: 600px;
 }
 .skillsConatiner .skills {
   display: flex;
@@ -333,6 +332,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 300px;
 }
 .skillsConatiner .skills .load--conatiner .load-col1 {
   flex: 1;
@@ -415,7 +415,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .skillsConatiner .skills .load--conatiner .dropdown:focus-within .dropdown-content {
   display: block;
-  height: 300px;
 }
 
 @media (max-width: 540px) {
