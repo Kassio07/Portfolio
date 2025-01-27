@@ -31,4 +31,17 @@ links.forEach(link => {
     });
 });
 
+// Dropdown Skills
+// Aprender a fazer o Accordeon
+function toggleAccordion(index) {
+    const contents = document.querySelectorAll('.accordion-content');
+    contents.forEach((content, i) => {
+      if (i === index) {
+        content.classList.toggle('show');
+      } else {
+        content.classList.remove('show');
+      }
+    });
+  }
+
 

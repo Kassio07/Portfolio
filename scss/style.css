@@ -382,6 +382,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   position: relative;
   display: inline-block;
   padding-right: 20px;
+  margin-bottom: 0;
 }
 .skillsConatiner .skills .load--conatiner .dropdown button {
   display: flex;
