@@ -3,7 +3,7 @@ let menu = document.querySelector('header');
 let hamburguerOn = document.querySelector(".fa-solid.fa-bars");
 let hamburguerOff = document.querySelector('.fa-solid.fa-xmark');
 
-// Adiciona um evento de click no botão de abrir o menu
+// Adiciona um evento de click no botão de abrir o menu - Mobile
 hamburguerOn.addEventListener("click", () => {
     if (hamburguerOn) {
         hamburguerOn.style.display = 'none';
@@ -19,42 +19,23 @@ hamburguerOff.addEventListener("click", () => {
     }
 });
 
-//dropdown-content, evento do click off
+// Accordions Skills
+function toggleAccordeon(index) {
+    const contents = document.querySelectorAll('.accordion-content');
+    contents.forEach((content, i) => {
+        if (i === index) {
+            content.classList.toggle('show')
+        } else {
+            content.classList.remove('show')
+        }
+    });
+}
 
-// Seleciona todos os link da página
-let links = document.querySelectorAll("a");
-
-// Adiciona um evento de click em cada link
-links.forEach(link => {
-    link.addEventListener("click", (event) => {
-        event.preventDefault();
+// Cancela o evento padrão do click
+let links = document.querySelectorAll('.accordion-header');
+links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
     });
 });
-
-// // Dropdown Skills
-// // Aprender a fazer o Accordeon
-// function toggleAccordion(index) {
-//     const contents = document.querySelectorAll('.accordion-content');
-//     contents.forEach((content, i) => {
-//       if (i === index) {
-//         content.classList.toggle('show');
-//       } else {
-//         content.classList.remove('show');
-//       }
-//     });
-//   }
-
-
-// Accordions 
-
-function toggleAccordeon(index){
-  const contents = document.querySelectorAll('.accordion-content');
-  contents.forEach((content, i)=>{
-      if(i === index){
-        content.classList.toggle('show')
-      }else{
-        content.classList.remove('show')
-      }
-  });
-}
 

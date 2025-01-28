@@ -30,7 +30,6 @@
       }
 
       .accordion-content {
-        // padding: 15px;
         padding: 5px 13px;
         display: none;
         background-color: #fff;
@@ -57,27 +56,27 @@
             border: 1px solid $tertiary-colorLight;
             width: 100%;
             height: 5px;
-            border-radius: 5px;
+            border-radius: 3px;
             position: relative;
             margin: 20px 0;
 
             .load-item {
               position: absolute;
-              width: 90%;
+              width: 95%;
               height: 100%;
               background-color: $tertiary-colorLight;
             }
             .css-item{
-              width: 80%;
+              width: 90%;
             }
             .js-item{
-              width: 60%;
+              width: 70%;
             }
             .jquery-item{
-              width: 60%;
+              width: 70%;
             }
             .boot-item{
-              width: 80%;
+              width: 85%;
             }
             .php-item{
               width: 70%;
@@ -100,14 +99,3 @@
 }
 
 
-// Media Query 540px
-
-@media (max-width: 540px) {
-  .skillsConatiner {
-    .skills {
-      .load--conatiner {
-        flex-direction: column;
-      }
-    }
-  }
-}

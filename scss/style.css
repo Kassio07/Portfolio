@@ -167,6 +167,9 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   font-size: 1.4rem;
   opacity: 0.5;
 }
+.imgTopo span i {
+  color: #00c9d2;
+}
 
 .about {
   width: 100%;
@@ -376,27 +379,27 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   border: 1px solid #00c9d2;
   width: 100%;
   height: 5px;
-  border-radius: 5px;
+  border-radius: 3px;
   position: relative;
   margin: 20px 0;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .load-item {
   position: absolute;
-  width: 90%;
+  width: 95%;
   height: 100%;
   background-color: #00c9d2;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .css-item {
-  width: 80%;
+  width: 90%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .js-item {
-  width: 60%;
+  width: 70%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .jquery-item {
-  width: 60%;
+  width: 70%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .boot-item {
-  width: 80%;
+  width: 85%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .php-item {
   width: 70%;
@@ -411,11 +414,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: block;
 }
 
-@media (max-width: 540px) {
-  .skillsConatiner .skills .load--conatiner {
-    flex-direction: column;
-  }
-}
 .qualification-content {
   display: flex;
   flex-direction: column;
