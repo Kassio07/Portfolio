@@ -30,7 +30,8 @@
       }
 
       .accordion-content {
-        padding: 15px;
+        // padding: 15px;
+        padding: 5px 13px;
         display: none;
         background-color: #fff;
 
@@ -65,6 +66,24 @@
               width: 90%;
               height: 100%;
               background-color: $tertiary-colorLight;
+            }
+            .css-item{
+              width: 80%;
+            }
+            .js-item{
+              width: 60%;
+            }
+            .jquery-item{
+              width: 60%;
+            }
+            .boot-item{
+              width: 80%;
+            }
+            .php-item{
+              width: 70%;
+            }
+            .mysql-item{
+              width: 70%;
             }
           }
           &:hover{

@@ -349,7 +349,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   color: #00c9d2;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content {
-  padding: 15px;
+  padding: 5px 13px;
   display: none;
   background-color: #fff;
 }
@@ -385,6 +385,24 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   width: 90%;
   height: 100%;
   background-color: #00c9d2;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .css-item {
+  width: 80%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .js-item {
+  width: 60%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .jquery-item {
+  width: 60%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .boot-item {
+  width: 80%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .php-item {
+  width: 70%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .mysql-item {
+  width: 70%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container:hover {
   background-color: rgba(230, 230, 230, 0.397);
