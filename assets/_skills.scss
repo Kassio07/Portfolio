@@ -26,6 +26,12 @@
 
         i {
           color: $tertiary-colorLight;
+
+          &.animation {
+            animation-name: load;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+          }
         }
       }
 
@@ -38,7 +44,8 @@
           margin: 2px 0;
           position: relative;
           padding: 5px;
-          .load-text{
+
+          .load-text {
             position: absolute;
             top: 5px;
             right: 1px;
@@ -46,12 +53,14 @@
             display: flex;
             justify-content: space-between;
             padding: 0px 5px;
-            span{
+
+            span {
               font-size: 0.8rem;
               color: $primary-black;
               font-weight: 500;
             }
           }
+
           .load {
             border: 1px solid $tertiary-colorLight;
             width: 100%;
@@ -66,27 +75,34 @@
               height: 100%;
               background-color: $tertiary-colorLight;
             }
-            .css-item{
+
+            .css-item {
               width: 90%;
             }
-            .js-item{
+
+            .js-item {
               width: 70%;
             }
-            .jquery-item{
+
+            .jquery-item {
               width: 70%;
             }
-            .boot-item{
+
+            .boot-item {
               width: 85%;
             }
-            .php-item{
+
+            .php-item {
               width: 70%;
             }
-            .mysql-item{
+
+            .mysql-item {
               width: 70%;
             }
           }
-          &:hover{
-           background-color: rgba(230, 230, 230, 0.397);
+
+          &:hover {
+            background-color: rgba(230, 230, 230, 0.397);
           }
         }
 
@@ -98,4 +114,14 @@
   }
 }
 
+// Animation
 
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(540deg);
+  }
+}

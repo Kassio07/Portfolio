@@ -351,6 +351,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .skillsConatiner .accordion .accordion-item .accordion-header i {
   color: #00c9d2;
 }
+.skillsConatiner .accordion .accordion-item .accordion-header i.animation {
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
 .skillsConatiner .accordion .accordion-item .accordion-content {
   padding: 5px 13px;
   display: none;
@@ -414,6 +419,14 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: block;
 }
 
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
+}
 .qualification-content {
   display: flex;
   flex-direction: column;

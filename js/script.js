@@ -22,13 +22,23 @@ hamburguerOff.addEventListener("click", () => {
 // Accordions Skills
 function toggleAccordeon(index) {
     const contents = document.querySelectorAll('.accordion-content');
+    const iconAcco = document.querySelectorAll('.accordion-header i');
+
     contents.forEach((content, i) => {
         if (i === index) {
-            content.classList.toggle('show')
+            content.classList.toggle('show');
         } else {
-            content.classList.remove('show')
+            content.classList.remove('show');
         }
     });
+    iconAcco.forEach((cont, indice) => {
+        if (indice === index) {
+            cont.classList.add('animation');
+        } else {
+            cont.classList.remove('animation');
+        }
+    });
+    
 }
 
 // Cancela o evento padrão do click
