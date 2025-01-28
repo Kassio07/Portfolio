@@ -2,103 +2,77 @@
 .skillsConatiner {
   background-color: $primary-gray;
 
-  .skills {
-    display: flex;
-    flex-direction: column;
+  .accordion {
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
 
-    .load--conatiner {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: 300px;
-      .load-col1{
-        flex: 1;
+    .accordion-item {
+      border: 1px solid #ccc;
+
+      .accordion-header {
         display: flex;
-        flex-direction: column;
-        .load-item {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          :nth-child(1) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            color: $gray-dark;
-            font-size: 0.9rem;
-            font-weight: 600;
-            padding-bottom: 3px;
-          }
+        flex-direction: row;
+        justify-content: space-between;
+        color: $primary-black;
+        font-size: 1rem;
+        padding: 15px;
+        cursor: pointer;
+        font-weight: bold;
 
-          .load {
-            width: 100%;
-            border-radius: 2px;
-            border: none;
-            background-color: #c4c4c4;
+        &:hover {
+          background-color: #e0e0e0;
+        }
 
-            .load-color {
-              background-color: $tertiary-colorLight;
-              height: 10px;
-            }
-            .item-1 {
-              width: 90%;
-            }
-
-            .item-2 {
-              width: 80%;
-            }
-
-            .item-3 {
-              width: 60%;
-            }
-            .item-4 {
-              width: 80%;
-            }
-            .item-5 {
-              width: 40%;
-            }
-          }
+        i {
+          color: $tertiary-colorLight;
         }
       }
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        padding-right: 20px;
-        margin-bottom: 0;
-        button {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          background-color: transparent;
-          color: $gray-dark;
-          font-size: 1.5rem;
-          font-weight: 600;
-          padding: 0px 0 30px 0;
-          border: none;
 
-          cursor: pointer;
-          border-radius: 4px;
-          width: 100%;
+      .accordion-content {
+        padding: 15px;
+        display: none;
+        background-color: #fff;
 
-          i {
-            padding-right: 10px;
-            font-size: 1.7rem;
-            color: $tertiary-colorLight;
+        .load-container {
+          margin: 2px 0;
+          position: relative;
+          padding: 5px;
+          .load-text{
+            position: absolute;
+            top: 5px;
+            right: 1px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 5px;
+            span{
+              font-size: 0.8rem;
+              color: $primary-black;
+              font-weight: 500;
+            }
+          }
+          .load {
+            border: 1px solid $tertiary-colorLight;
+            width: 100%;
+            height: 5px;
+            border-radius: 5px;
+            position: relative;
+            margin: 20px 0;
+
+            .load-item {
+              position: absolute;
+              width: 90%;
+              height: 100%;
+              background-color: $tertiary-colorLight;
+            }
+          }
+          &:hover{
+           background-color: rgba(230, 230, 230, 0.397);
           }
         }
 
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          width: 100%;
-          padding-right: 20px;
-          a {
-            color: black;
-            display: block;
-            padding-bottom: 10px;
-          }
-        }
-
-        &:focus-within .dropdown-content {
+        &.show {
           display: block;
         }
       }

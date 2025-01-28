@@ -21,45 +21,6 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <!-- End Favicon -->
     <title>Portifólio</title>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 20px;
-        }
-    
-        .accordion {
-          width: 100%;
-          max-width: 500px;
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          overflow: hidden;
-        }
-    
-        .accordion-item {
-          border-bottom: 1px solid #ccc;
-        }
-    
-        .accordion-header {
-          padding: 15px;
-          background-color: #f5f5f5;
-          cursor: pointer;
-          font-weight: bold;
-        }
-    
-        .accordion-header:hover {
-          background-color: #e0e0e0;
-        }
-    
-        .accordion-content {
-          padding: 15px;
-          display: none;
-          background-color: #fff;
-        }
-    
-        .accordion-content.show {
-          display: block;
-        }
-      </style>
 </head>
 
 <body>
@@ -159,18 +120,31 @@
                     <!-- Aprender a fazer o Accordeon -->
                     <div class="accordion">
                         <div class="accordion-item">
-                          <div class="accordion-header" onclick="toggleAccordion(0)">Item 1</div>
-                          <div class="accordion-content">
-                            <p>Conteúdo do Item 1</p>
-                          </div>
+                            <div class="accordion-header" onclick="toggleAccordeon(0)">Front-End <i class="fa-solid fa-caret-down"></i></div>
+                            <div class="accordion-content">
+                                <div class="load-container">
+                                    <div class="load-text">
+                                        <span>HTML</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="load">
+                                        <div class="load-item"></div>
+                                    </div>
+                                </div>
+                                <div class="load-container">
+                                    <div class="load">
+                                        <div class="load-item"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion-item">
-                          <div class="accordion-header" onclick="toggleAccordion(1)">Item 2</div>
-                          <div class="accordion-content">
-                            <p>Conteúdo do Item 2</p>
-                          </div>
+                            <div class="accordion-header" onclick="toggleAccordeon(1)">Back-End <i class="fa-solid fa-caret-down"></i></div>
+                            <div class="accordion-content">
+                                <p>Contéudo do item</p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
             <div class="section-qualificacao">
