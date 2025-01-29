@@ -21,9 +21,11 @@ hamburguerOff.addEventListener("click", () => {
 
 // Accordions Skills
 function toggleAccordeon(index) {
+    // Selecionando os controles
     const contents = document.querySelectorAll('.accordion-content');
     const iconAcco = document.querySelectorAll('.accordion-header i');
 
+    // Accordion 
     contents.forEach((content, i) => {
         if (i === index) {
             content.classList.toggle('show');
@@ -31,9 +33,10 @@ function toggleAccordeon(index) {
             content.classList.remove('show');
         }
     });
+    // Accordion arrow
     iconAcco.forEach((cont, indice) => {
         if (indice === index) {
-            cont.classList.add('animation');
+            cont.classList.toggle('animation');
         } else {
             cont.classList.remove('animation');
         }
