@@ -511,6 +511,14 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
     width: 100%;
     padding-top: 50px;
   }
+  .qualification-content .qualification-data .qualification-quite {
+    margin: 0 30px 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .qualification-content .qualification-data .qualification-quite {
+    margin: 0 5px;
+  }
 }
 html {
   scroll-behavior: smooth;
