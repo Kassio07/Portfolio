@@ -41,7 +41,6 @@ function toggleAccordeon(index) {
             cont.classList.remove('animation');
         }
     });
-    
 }
 
 // Cancela o evento padrão do click

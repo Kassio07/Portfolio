@@ -74,7 +74,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 20px;
 
         ul {
           flex: 1;
@@ -111,6 +110,16 @@
 .titleH2 {
   font-size: 1.6rem;
   font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img{
+    background-color: $primary-gray;
+    border-radius: 50%;
+    width: 35px;
+    margin-left: 7px;
+    padding: 5px;
+  }
 }
 .container {
   max-width: 1400px;
