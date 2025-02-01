@@ -51,3 +51,8 @@ links.forEach((link) => {
     });
 });
 
+
+
+function galery(){
+    alert('ok')
+}

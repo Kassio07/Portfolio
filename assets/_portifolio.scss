@@ -1,0 +1,92 @@
+.portifolio-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .port-titles {
+        width: 100%;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+
+        span {
+
+
+            a {
+                color: $tertiary-colorLight;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .port-galery-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .galery-item {
+            display: inline-block;
+            position: relative;
+            max-width: 400px;
+            min-width: 300px;
+            height: 300px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            .item-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.769);
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+
+                span {
+                    color: $primary-light;
+
+                    &:first-child {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        z-index: 99;
+
+                        a {
+                            color: $primary-light;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        left: 50%;
+                        top: 82%;
+                        transform: translateX(-50%);
+                        font-size: 0.9rem;
+                        z-index: 99;
+                        width: 350px;
+                    }
+
+                }
+
+            }
+
+            &:hover .item-text {
+                opacity: 1;
+            }
+        }
+    }
+}
