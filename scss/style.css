@@ -550,7 +550,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   position: relative;
   max-width: 400px;
   min-width: 300px;
-  height: 300px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .portifolio-container .port-galery-container .galery-item img {
