@@ -548,8 +548,8 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .portifolio-container .port-galery-container .galery-item {
   display: inline-block;
   position: relative;
-  max-width: 400px;
-  min-width: 300px;
+  min-width: 350px;
+  flex: 1;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .portifolio-container .port-galery-container .galery-item img {

@@ -11,10 +11,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 40px;
-
         span {
-
-
             a {
                 color: $tertiary-colorLight;
                 font-size: 0.9rem;
@@ -32,8 +29,8 @@
         .galery-item {
             display: inline-block;
             position: relative;
-            max-width: 400px;
-            min-width: 300px;
+            min-width: 350px;
+            flex: 1;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
             img {
