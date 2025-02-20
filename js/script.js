@@ -52,7 +52,23 @@ links.forEach((link) => {
 });
 
 
+// Evento na sessão de portfólio - evento de click e mostra os itens relacionado
 
-function galery(){
-    alert('ok')
-}
+// selecionando os controles
+document.querySelectorAll(".link").forEach(link =>{
+    // Quando clicar no botão faz esse evento
+    link.addEventListener("click", function(event){
+        event.preventDefault(); // Evita o evento padrão do click
+
+        let target = this.getAttribute("data-target");  // seleciona o alvo do click e pega o atributo
+
+        // Esconde todos os conteúdos
+        document.querySelectorAll('.port-galery-container').forEach(div =>{
+            div.style.display = "none";
+        })
+        // pega o alvo do click e coloca como display:flex
+        if(target){
+            document.getElementById(target).style.display = "flex";
+        }
+    });
+})

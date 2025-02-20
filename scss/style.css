@@ -535,12 +535,17 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   gap: 40px;
 }
 .portifolio-container .port-titles span a {
-  color: #00c9d2;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+.portifolio-container .link {
+  color: #292f37;
+}
+.portifolio-container .link:hover {
+  border-bottom: 2px solid #00c9d2;
 }
 .portifolio-container .port-galery-container {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
@@ -548,8 +553,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .portifolio-container .port-galery-container .galery-item {
   display: inline-block;
   position: relative;
-  min-width: 350px;
-  flex: 1;
+  max-width: 380px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .portifolio-container .port-galery-container .galery-item img {
@@ -585,7 +589,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .portifolio-container .port-galery-container .galery-item .item-text span:nth-child(2) {
   position: absolute;
   left: 50%;
-  top: 82%;
+  top: 75%;
   transform: translateX(-50%);
   font-size: 0.9rem;
   z-index: 99;
