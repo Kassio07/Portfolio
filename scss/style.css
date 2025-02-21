@@ -525,6 +525,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   height: auto;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .portifolio-container .port-titles {
   width: 100%;
@@ -539,9 +540,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .portifolio-container .link {
   color: #292f37;
+  transition: 0.5s;
 }
 .portifolio-container .link:hover {
-  border-bottom: 2px solid #00c9d2;
+  color: #00c9d2;
 }
 .portifolio-container .port-galery-container {
   width: 100%;

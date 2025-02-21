@@ -1,3 +1,6 @@
+// Aos animation
+AOS.init();
+
 // Seleciona os botões de abrir e fechar o menu
 let menu = document.querySelector('header');
 let hamburguerOn = document.querySelector(".fa-solid.fa-bars");
@@ -68,7 +71,11 @@ document.querySelectorAll(".link").forEach(link =>{
         })
         // pega o alvo do click e coloca como display:flex
         if(target){
+            document.getElementById(target).style.opacity = "0";
             document.getElementById(target).style.display = "flex";
+            setTimeout(()=>{
+                document.getElementById(target).style.opacity = "1";
+            },300);
         }
     });
 })

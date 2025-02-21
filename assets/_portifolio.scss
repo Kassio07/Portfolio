@@ -3,7 +3,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-
+    height: 100vh;
     .port-titles {
         width: 100%;
         padding-bottom: 80px;
@@ -20,8 +20,9 @@
     }
     .link{
         color: $gray-dark;
+        transition: 0.5s;
         &:hover{
-            border-bottom: 2px solid $tertiary-colorLight;
+            color: $tertiary-colorLight;
         }
     }
     .port-galery-container {
@@ -30,7 +31,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-
         .galery-item {
             display: inline-block;
             position: relative;
