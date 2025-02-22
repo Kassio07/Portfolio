@@ -46,7 +46,7 @@ function toggleAccordeon(index) {
   });
 }
 
-// Cancela o evento padrão do click
+// Cancela o evento padrão do click do Acordion 
 let links = document.querySelectorAll(".accordion-header");
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -54,11 +54,10 @@ links.forEach((link) => {
   });
 });
 
-// Evento na sessão de portfólio - evento de click e mostra os itens relacionado
 
-// selecionando os controles
+// Evento na sessão de portfólio - evento de click e mostra os itens relacionado
 document.querySelectorAll(".link").forEach((link) => {
-  // Quando clicar no botão faz esse evento
+  // Quando clicar no alvo faz esse evento
   link.addEventListener("click", function (event) {
     event.preventDefault(); // Evita o evento padrão do click
 
