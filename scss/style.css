@@ -601,6 +601,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   opacity: 1;
 }
 
+.colorClick {
+  color: red;
+}
+
 html {
   scroll-behavior: smooth;
 }
