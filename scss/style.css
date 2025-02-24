@@ -601,10 +601,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   opacity: 1;
 }
 
-.colorClick {
-  color: red;
+@media (max-width: 576px) {
+  .portifolio-container .port-titles .link {
+    font-size: 0.7rem;
+  }
 }
-
 html {
   scroll-behavior: smooth;
 }

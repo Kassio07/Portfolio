@@ -68,6 +68,7 @@
                         a {
                             color: $primary-light;
                         }
+                        
                     }
 
                     &:nth-child(2) {
@@ -91,6 +92,21 @@
     }
 }
 
-.colorClick{
-    color: red;
+
+
+@media(max-width: 576px){
+    .portifolio-container{
+        .port-titles{
+            span{
+
+                a{
+                }
+            }
+
+            .link{
+                font-size: 0.7rem;
+
+            }
+        }
+    }
 }

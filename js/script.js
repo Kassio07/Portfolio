@@ -76,7 +76,6 @@ document.querySelectorAll(".link").forEach((link) => {
     });
 
     //Exibe o elemento alvo com a transição suave
-    selecaoAlvo.style.opacity = '0';
     selecaoAlvo.style.display = "flex";
     setTimeout(() => {
       selecaoAlvo.style.opacity = "1";
