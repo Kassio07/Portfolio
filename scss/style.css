@@ -8,7 +8,9 @@ header .menuLateral-container {
   background-color: #040B14;
   width: 280px;
   height: 100vh;
+  overflow-y: scroll;
   padding-top: 10px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -77,16 +79,16 @@ header .menuLateral-container .menuIcons ul li a:hover > i {
   color: #fff;
 }
 header .menuLateral-container .menuIcons ul li:nth-child(1) a:hover {
-  background-color: #FE3F31;
+  background-color: #fe3f31;
 }
 header .menuLateral-container .menuIcons ul li:nth-child(2) a:hover {
-  background-color: #0865FE;
+  background-color: #0865fe;
 }
 header .menuLateral-container .menuIcons ul li:nth-child(3) a:hover {
   background-color: #000;
 }
 header .menuLateral-container .menuIcons ul li:nth-child(4) a:hover {
-  background-color: #0865FE;
+  background-color: #0865fe;
 }
 header .menuLateral-container .menuLinks {
   padding-top: 40px;
