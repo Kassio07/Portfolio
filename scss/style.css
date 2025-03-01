@@ -725,4 +725,16 @@ main {
   .containerGeral .hamburguerMenu .fa-xmark {
     display: none;
   }
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00c9d2;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(20, 157, 177, 0.532);
 }/*# sourceMappingURL=style.css.map */
