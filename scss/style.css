@@ -278,25 +278,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   left: 0px;
 }
 
-@media (max-width: 1300px) {
-  .about .aboutInfo-container {
-    flex-direction: column;
-    gap: 80px;
-  }
-  .about .aboutInfo-container .about-col1 {
-    padding-right: 0px;
-    text-align: center;
-  }
-  .about .aboutInfo-container .about-col1 img {
-    max-width: 70%;
-  }
-  .about .aboutInfo-container .about-col2 p {
-    font-size: 1rem;
-  }
-  .about .aboutInfo-container .about-col2 .listSobre ul li a {
-    font-size: 0.9rem;
-  }
-}
 @media (min-width: 1600px) {
   .imgTopo .titleTop {
     left: 180px;
@@ -309,6 +290,20 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
     padding: 70px 150px;
   }
 }
+@media (max-width: 1300px) {
+  .about .aboutInfo-container .about-col1 {
+    padding-right: 30px;
+  }
+  .about .aboutInfo-container .about-col1 img {
+    max-width: 100%;
+  }
+  .about .aboutInfo-container .about-col2 .aboutText p {
+    font-size: 0.8rem;
+  }
+  .about .aboutInfo-container .about-col2 .listSobre ul li a {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 960px) {
   .imgTopo .titleTop {
     top: 85%;
@@ -319,6 +314,22 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   }
   .imgTopo span {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .about .aboutInfo-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .about .aboutInfo-container .about-col2 .listSobre {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .about .aboutInfo-container .about-col1 {
+    padding-right: 0;
+  }
+  .portifolio .portifolio-container .port-titles {
+    gap: 25px;
   }
 }
 @media (max-width: 540px) {
@@ -538,7 +549,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .portifolio-container .port-titles {
   width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -566,7 +577,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: inline-block;
   position: relative;
   flex: 1;
-  min-width: 340px;
+  min-width: 300px;
   max-width: 400px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
@@ -613,20 +624,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 
 @media (max-width: 576px) {
-  .portifolio-container .port-titles {
-    width: 100%;
-    padding-bottom: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-  }
-  .portifolio-container .port-titles span a {
-    font-size: 0.8rem;
-  }
-  .portifolio-container .port-galery-container {
-    justify-content: center;
-  }
   .portifolio-container .port-galery-container .galery-item {
     min-width: 330px;
     max-width: 330px;
@@ -646,7 +643,8 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
     justify-content: center;
   }
   .portifolio-container .port-galery-container .galery-item {
-    min-width: 330px;
+    min-width: 300px;
+    max-width: 400px;
     flex: 1;
   }
 }

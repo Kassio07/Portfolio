@@ -7,7 +7,7 @@
 
     .port-titles {
         width: 100%;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -42,7 +42,7 @@
             display: inline-block;
             position: relative;
             flex: 1;
-            min-width: 340px;
+            min-width: 300px;
             max-width: 400px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
@@ -106,25 +106,7 @@
 
 @media(max-width: 576px) {
     .portifolio-container {
-
-        .port-titles {
-            width: 100%;
-            padding-bottom: 80px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 40px;
-    
-            span {
-                a {
-                    font-size: 0.8rem;
-    
-                }
-            }
-        }
         .port-galery-container {
-            justify-content: center;
-
             .galery-item {
                 min-width: 330px;
                 max-width: 330px;
@@ -152,7 +134,8 @@
             justify-content: center;
 
             .galery-item {
-                min-width: 330px;
+                min-width: 300px;
+                max-width: 400px;
                 flex: 1;
             }
         }
