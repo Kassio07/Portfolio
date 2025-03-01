@@ -733,7 +733,7 @@ main {
 
 ::-webkit-scrollbar-thumb {
   background-color: #00c9d2;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
