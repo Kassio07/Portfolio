@@ -164,6 +164,11 @@
       gap: 80px;
       .about-col1 {
         padding-right: 0px;
+        text-align: center;
+       
+        img{
+          max-width: 70%; 
+        }
       }
       .about-col2 {
         p {
@@ -241,6 +246,12 @@
         .listSobre {
           flex-direction: column;
           align-items: flex-start;
+        }
+      }
+
+      .about-col1 {
+        img{
+          max-width: 100%; 
         }
       }
     }

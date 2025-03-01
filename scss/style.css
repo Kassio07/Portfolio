@@ -283,6 +283,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   }
   .about .aboutInfo-container .about-col1 {
     padding-right: 0px;
+    text-align: center;
+  }
+  .about .aboutInfo-container .about-col1 img {
+    max-width: 70%;
   }
   .about .aboutInfo-container .about-col2 p {
     font-size: 1rem;
@@ -331,6 +335,9 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   .about .aboutInfo-container .about-col2 .listSobre {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .about .aboutInfo-container .about-col1 img {
+    max-width: 100%;
   }
 }
 .skillsConatiner {
@@ -548,6 +555,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .portifolio-container .port-galery-container {
   width: 100%;
   display: none;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
@@ -555,7 +563,9 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .portifolio-container .port-galery-container .galery-item {
   display: inline-block;
   position: relative;
-  max-width: 380px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .portifolio-container .port-galery-container .galery-item img {
@@ -595,15 +605,42 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   transform: translateX(-50%);
   font-size: 0.9rem;
   z-index: 99;
-  width: 350px;
 }
 .portifolio-container .port-galery-container .galery-item:hover .item-text {
   opacity: 1;
 }
 
 @media (max-width: 576px) {
-  .portifolio-container .port-titles .link {
-    font-size: 0.7rem;
+  .portifolio-container .port-galery-container {
+    justify-content: center;
+  }
+  .portifolio-container .port-galery-container .galery-item {
+    min-width: 330px;
+    max-width: 330px;
+  }
+}
+@media (max-width: 768px) {
+  .portifolio-container .port-galery-container {
+    justify-content: center;
+  }
+  .portifolio-container .port-galery-container .galery-item {
+    min-width: 330px;
+    max-width: 330px;
+  }
+}
+@media (max-width: 992px) {
+  .portifolio-container .port-galery-container {
+    justify-content: center;
+  }
+  .portifolio-container .port-galery-container .galery-item {
+    min-width: 330px;
+    flex: 1;
+  }
+}
+@media (min-width: 1600px) {
+  .portifolio-container .port-galery-container .galery-item {
+    min-width: 330px;
+    max-width: 400px;
   }
 }
 html {
