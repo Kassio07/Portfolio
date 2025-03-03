@@ -14,9 +14,8 @@
         gap: 40px;
 
         span {
-            a {
+            .link{
                 font-size: 1rem;
-
             }
         }
     }
@@ -24,7 +23,6 @@
     .link {
         color: $gray-dark;
         transition: 0.5s;
-
         &:hover {
             color: $tertiary-colorLight;
         }
@@ -113,6 +111,24 @@
             .galery-item {
                 min-width: 330px;
                 max-width: 330px;
+            }
+        }
+
+        .port-titles{
+            gap: 12px;
+            align-items: center;
+            
+            span{
+               .link{
+                font-size: 0.8rem;
+               }
+            }
+        }
+        .link {
+            color: $gray-dark;
+            transition: 0.5s;
+            &:hover {
+                color: $tertiary-colorLight;
             }
         }
     }

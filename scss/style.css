@@ -297,9 +297,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   .about .aboutInfo-container .about-col1 img {
     max-width: 100%;
   }
-  .about .aboutInfo-container .about-col2 .aboutText p {
-    font-size: 0.8rem;
-  }
   .about .aboutInfo-container .about-col2 .listSobre ul li a {
     font-size: 0.8rem;
   }
@@ -327,9 +324,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   }
   .about .aboutInfo-container .about-col1 {
     padding-right: 0;
-  }
-  .portifolio .portifolio-container .port-titles {
-    gap: 25px;
   }
 }
 @media (max-width: 540px) {
@@ -555,7 +549,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   justify-content: center;
   gap: 40px;
 }
-.portifolio-container .port-titles span a {
+.portifolio-container .port-titles span .link {
   font-size: 1rem;
 }
 .portifolio-container .link {
@@ -627,6 +621,20 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   .portifolio-container .port-galery-container .galery-item {
     min-width: 330px;
     max-width: 330px;
+  }
+  .portifolio-container .port-titles {
+    gap: 12px;
+    align-items: center;
+  }
+  .portifolio-container .port-titles span .link {
+    font-size: 0.8rem;
+  }
+  .portifolio-container .link {
+    color: #292f37;
+    transition: 0.5s;
+  }
+  .portifolio-container .link:hover {
+    color: #00c9d2;
   }
 }
 @media (max-width: 768px) {

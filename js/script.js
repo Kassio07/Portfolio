@@ -58,11 +58,17 @@ links.forEach((link) => {
 // Evento na sessão de portfólio - evento de click e mostra os itens relacionado
 document.querySelectorAll(".link").forEach((link) => {
   // Quando clicar no alvo faz esse evento
+
+  let larguraTela = window.innerWidth;
+  if(larguraTela <= 400){
+    link.style.fontSize = '14px';
+  }
   link.addEventListener("click", function (event) {
     event.preventDefault(); // Evita o evento padrão do click
 
     let target = this.getAttribute("data-target"); // seleciona o alvo do click e pega o atributo
     let selecaoAlvo = document.getElementById(target); // Seleciona o elemento uma única vez
+    
 
     //Caso o elemento não exista
     if (!selecaoAlvo) {
@@ -73,7 +79,7 @@ document.querySelectorAll(".link").forEach((link) => {
     document.querySelectorAll(".port-galery-container").forEach((div) => {
       div.style.display = "none";
       div.style.opacity = "0";
-    });
+    }); 
 
     //Exibe o elemento alvo com a transição suave
     selecaoAlvo.style.display = "flex";
