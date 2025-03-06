@@ -22,6 +22,9 @@ hamburguerOff.addEventListener("click", () => {
   }
 });
 
+// Evento no top da página
+let 
+
 // Accordions Skills
 function toggleAccordeon(index) {
   // Selecionando os controles
@@ -58,11 +61,6 @@ links.forEach((link) => {
 // Evento na sessão de portfólio - evento de click e mostra os itens relacionado
 document.querySelectorAll(".link").forEach((link) => {
   // Quando clicar no alvo faz esse evento
-
-  let larguraTela = window.innerWidth;
-  if(larguraTela <= 400){
-    link.style.fontSize = '14px';
-  }
   link.addEventListener("click", function (event) {
     event.preventDefault(); // Evita o evento padrão do click
 
