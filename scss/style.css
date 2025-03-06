@@ -574,6 +574,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   min-width: 300px;
   max-width: 400px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  overflow: hidden;
 }
 .portifolio-container .port-galery-container .galery-item img {
   display: block;
@@ -597,6 +598,8 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 100%;
+  text-align: center;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
   cursor: pointer;
@@ -607,8 +610,9 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .portifolio-container .port-galery-container .galery-item .item-text span:nth-child(2) {
   position: absolute;
-  left: 50%;
+  left: 55%;
   top: 75%;
+  width: 100%;
   transform: translateX(-50%);
   font-size: 0.9rem;
   z-index: 99;
