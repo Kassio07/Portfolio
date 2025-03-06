@@ -42,6 +42,14 @@
       color: $tertiary-colorLight;
     }
   }
+
+  .eventTop{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: none;
+  }
 }
 .about {
   width: 100%;

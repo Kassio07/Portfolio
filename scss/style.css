@@ -172,6 +172,13 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .imgTopo span i {
   color: #00c9d2;
 }
+.imgTopo .eventTop {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  display: none;
+}
 
 .about {
   width: 100%;

@@ -23,7 +23,7 @@ hamburguerOff.addEventListener("click", () => {
 });
 
 // Evento no top da página
-let 
+
 
 // Accordions Skills
 function toggleAccordeon(index) {
