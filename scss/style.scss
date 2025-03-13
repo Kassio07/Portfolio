@@ -94,14 +94,14 @@ main {
 // Estilizando o scroll do menu e da página
 
 ::-webkit-scrollbar{
-  width: 2px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: $tertiary-colorLight;
+  background-color: #0b1624;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background-color: rgba(20, 157, 177, 0.532);
+  background-color: #0b1829;
 }
