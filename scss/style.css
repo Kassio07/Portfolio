@@ -219,16 +219,16 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: flex;
   flex-direction: column;
 }
-.about .aboutInfo-container .about-col2 .listSobre ul li a {
-  color: #040B14;
+.about .aboutInfo-container .about-col2 .listSobre ul li {
   font-size: 0.9rem;
+  color: #040B14;
 }
-.about .aboutInfo-container .about-col2 .listSobre ul li a i {
+.about .aboutInfo-container .about-col2 .listSobre ul li i {
   padding-right: 10px;
   font-size: 1.5rem;
   color: #00c9d2;
 }
-.about .aboutInfo-container .about-col2 .listSobre ul li a strong {
+.about .aboutInfo-container .about-col2 .listSobre ul li strong {
   padding-right: 10px;
   font-weight: 500;
 }
