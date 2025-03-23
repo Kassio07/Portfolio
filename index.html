@@ -2,17 +2,17 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Meta tags SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Conheça meu portfólio, projetos e trajetória profissional em desenvolvimento web. Veja minhas habilidades e experiências!">
+    <!-- Meta tags SEO -->
     <!--Resumo da página-->
+    <meta name="description"
+        content="Portfólio de Kassio Kennedy - Desenvolvedor Web. Veja meus projetos, habilidades e trajetória profissional na tecnologia.">
+        <!--Palavras chaves SEO-->
     <meta name="keywords"
         content="portfólio, projetos, programação, desenvolvimento web, design, trajetória profissional, experiência">
-    <!--Palavras chaves SEO-->
     <meta name="robots" content="index, follow"> <!-- Indexar a página no Google etc -->
-    <meta name="author" content="Kassio Kennedy">
+    <meta name="author" content="Kassio Kennedy"> <!-- Autor da página-->
     <!-- End SEO -->
 
     <!-- Meta tags rede sociais -->
@@ -33,7 +33,7 @@
     <!-- End Google fonts -->
 
     <!-- FontAwessome -->
-    <script src="https://kit.fontawesome.com/f50987608b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f50987608b.js" crossorigin="anonymous" defer></script>
     <!-- End Fontawessome -->
 
     <!-- Aos -->
@@ -46,51 +46,63 @@
     <!-- End CSS -->
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="preload" href="img/favicon.svg" as="image">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <!-- End Favicon -->
+    <link rel="canonical" href="https://kassio07.github.io/Portfolio/">
+
 
     <title>Meu Portfólio | Projetos e Trajetória Profissional</title>
 </head>
 
 <body>
+    <!-- Container geral do site -->
     <div class="containerGeral">
         <div class="hamburguerMenu">
             <i class="fa-solid fa-bars"></i>
             <i class="fa-solid fa-xmark"></i>
         </div>
+        <!-- Inicio header -->
         <header>
-            <div class="menuLateral-container">
-                <div class="menuIMG">
-                    <div class="imgContainer"><img src="img/imagem-perfil.png" alt="foto de perfil"></div>
-                    <span class="menuNome">Kassio Kennedy</span>
+            <!-- Inicio menu lateral -->
+                <nav>
+                <div class="menuLateral-container">
+                    <div class="menuIMG">
+                        <div class="imgContainer"><img src="img/imagem-perfil.png" alt="foto de perfil"></div>
+                        <span class="menuNome">Kassio Kennedy</span>
+                    </div>
+                    <div class="menuIcons">
+                        <ul>
+                            <li><a href="https://www.instagram.com/kaess_07/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#home"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#home"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kassio07kennedy/" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="menuLinks">
+                        <ul>
+                            <li><a href="#home" title="Ir para home"><i class="fa-solid fa-house"></i>Home</a></li>
+                            <li><a href="#about" title="Ir para sobre"><i class="fa-solid fa-user"></i>Sobre</a></li>
+                            <li><a href="#skills" title="Ir para Habilidades"><i class="fa-solid fa-file"></i>Skills</a>
+                            </li>
+                            <li><a href="#resumo" title="Ir para o resumo do site"><i
+                                        class="fa-solid fa-list-check"></i>Resumo</a></li>
+                            <li><a href="#portifolio" title="Ir para o portfólio"><i
+                                        class="fa-solid fa-image"></i>Portfólio</a></li>
+                            <li><a href="#contato" title="Ir para os contatos"><i class="fa-solid fa-phone"></i>Contato</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="menuIcons">
-                    <ul>
-                        <li><a href="https://www.instagram.com/kaess_07/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#home"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#home"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/kassio07kennedy/" target="_blank"><i
-                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-                <div class="menuLinks">
-                    <ul>
-                        <li><a href="#home" title="Ir para home"><i class="fa-solid fa-house"></i>Home</a></li>
-                        <li><a href="#about" title="Ir para sobre"><i class="fa-solid fa-user"></i>Sobre</a></li>
-                        <li><a href="#skills" title="Ir para Habilidades"><i class="fa-solid fa-file"></i>Skills</a>
-                        </li>
-                        <li><a href="#resumo" title="Ir para o resumo do site"><i
-                                    class="fa-solid fa-list-check"></i>Resumo</a></li>
-                        <li><a href="#portifolio" title="Ir para o portfólio"><i
-                                    class="fa-solid fa-image"></i>Portfólio</a></li>
-                        <li><a href="#contato" title="Ir para os contatos"><i class="fa-solid fa-phone"></i>Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                </nav>
+            <!-- Fim menu lateral -->
         </header>
+        <!-- Fim header -->
+         <!-- Inicio Main -->
         <main>
+            <!-- titulo geral da página -->
             <div class="imgTopo" id="home">
                 <div class="eventTop"></div>
                 <div class="opac"></div>
@@ -99,11 +111,12 @@
                     <span>Desenvolvimento Web <i class="fa-solid fa-code"></i></span>
                 </div>
             </div>
+            <!-- Fim titulo geral página  -->
             <!-- Seccao About -->
-            <div class="about" id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <section class="about" id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <div class="container">
                     <div class="title">
-                        <h1 class="titleSection">Sobre</h1>
+                        <h2 class="titleSection">Sobre</h2>
                         <p class="subTitleSection">Sou estudante de Engenharia de Software e apaixonado pelo mundo da
                             tecnologia. Meu principal objetivo é atuar como desenvolvedor web, criando soluções
                             inovadoras e otimizadas para a web.</p>
@@ -150,12 +163,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- End About -->
             <!-- Habilidades -->
-            <div class="skillsConatiner" id="skills" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <section class="skillsConatiner" id="skills" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <div class="container">
                     <div class="title">
-                        <h1 class="titleSection">Skills</h1>
+                        <h2 class="titleSection">Skills</h2>
                         <p class="subTitleSection"> Abaixo estão algumas das principais tecnologias com as quais
                             trabalho:</p>
                     </div>
@@ -239,12 +253,13 @@
                     </div>
                     <!-- End Accordion -->
                 </div>
-            </div>
-            <!-- Secao Resumo -->
-            <div class="section-qualificacao" id="resumo" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            </section>
+            <!-- End Habilidades -->
+            <!-- Seccao Resumo -->
+            <section class="section-qualificacao" id="resumo" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <div class="container">
                     <div class="title">
-                        <h1 class="titleSection">Resumo</h1>
+                        <h2 class="titleSection">Resumo</h2>
                         <p class="subTitleSection">Ao longo da minha jornada, busquei sempre aprender e me aprimorar,
                             aceitando desafios que me permitiram crescer tanto profissionalmente quanto pessoalmente.
                         </p>
@@ -304,12 +319,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- End resumo -->
             <!-- Seccao Portfólio -->
-            <div class="portifolio" id="portifolio" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <section class="portifolio" id="portifolio" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <div class="container">
                     <div class="title">
-                        <h1 class="titleSection">Portfólio</h1>
+                        <h2 class="titleSection">Portfólio</h2>
                         <p class="subTitleSection">Ao longo da minha jornada, busquei sempre aprender e me aprimorar,
                             aceitando desafios que me permitiram crescer tanto profissionalmente quanto pessoalmente.
                         </p>
@@ -481,7 +497,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
     </div>
 
