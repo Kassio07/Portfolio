@@ -19,10 +19,13 @@
             }
         }
     }
-
-    .link {
+    
+    .link{
         color: $gray-dark;
-        transition: 0.5s;
+        transition: color 0.3s ease;
+        &.active{
+            color: $tertiary-colorLight;
+        }
         &:hover {
             color: $tertiary-colorLight;
         }
@@ -31,7 +34,7 @@
     .port-galery-container {
         width: 100%;
         display: none;
-        justify-content:center;
+        justify-content:center; 
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;

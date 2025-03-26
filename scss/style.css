@@ -561,7 +561,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .portifolio-container .link {
   color: #292f37;
-  transition: 0.5s;
+  transition: color 0.3s ease;
+}
+.portifolio-container .link.active {
+  color: #00c9d2;
 }
 .portifolio-container .link:hover {
   color: #00c9d2;

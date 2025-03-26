@@ -1,666 +1,515 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Meta tags SEO -->
-    <!--Resumo da página-->
-    <meta
-      name="description"
-      content="Portfólio de Kassio Kennedy - Desenvolvedor Web. Veja meus projetos, habilidades e trajetória profissional na tecnologia."
-    />
-    <!--Palavras chaves SEO-->
-    <meta
-      name="keywords"
-      content="portfólio, projetos, programação, desenvolvimento web, design, trajetória profissional, experiência"
-    />
-    <meta name="robots" content="index, follow" />
-    <!-- Indexar a página no Google etc -->
-    <meta name="author" content="Kassio Kennedy" />
-    <!-- Autor da página-->
-    <!-- End SEO -->
 
-    <!-- Meta tags rede sociais -->
-    <meta
-      property="og:title"
-      content="Meu Portfólio | Projetos e Trajetória Profissional"
-    />
-    <meta
-      property="og:description"
-      content="Explore meus projetos e minha trajetória no desenvolvimento web e tecnologia."
-    />
-    <meta
-      property="og:image"
-      content="http://kassio07.github.io/Portfolio/img/perfilRedesMetaTag2.png"
-    />
-    <meta
-      property="og:url"
-      content="https://kassio07.github.io/Portfolio/#home"
-    />
-    <meta property="og:type" content="website" />
-    <!-- End Meta tags redes sociais -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta tags SEO -->
+  <!--Resumo da página-->
+  <meta name="description"
+    content="Portfólio de Kassio Kennedy - Desenvolvedor Web. Veja meus projetos, habilidades e trajetória profissional na tecnologia." />
+  <!--Palavras chaves SEO-->
+  <meta name="keywords"
+    content="portfólio, projetos, programação, desenvolvimento web, design, trajetória profissional, experiência" />
+  <meta name="robots" content="index, follow" />
+  <!-- Indexar a página no Google etc -->
+  <meta name="author" content="Kassio Kennedy" />
+  <!-- Autor da página-->
+  <!-- End SEO -->
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End Google fonts -->
+  <!-- Meta tags rede sociais -->
+  <meta property="og:title" content="Meu Portfólio | Projetos e Trajetória Profissional" />
+  <meta property="og:description"
+    content="Explore meus projetos e minha trajetória no desenvolvimento web e tecnologia." />
+  <meta property="og:image" content="http://kassio07.github.io/Portfolio/img/perfilRedesMetaTag2.png" />
+  <meta property="og:url" content="https://kassio07.github.io/Portfolio/#home" />
+  <meta property="og:type" content="website" />
+  <!-- End Meta tags redes sociais -->
 
-    <!-- FontAwessome -->
-    <script
-      src="https://kit.fontawesome.com/f50987608b.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <!-- End Fontawessome -->
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- End Google fonts -->
 
-    <!-- Aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- End Aos -->
+  <!-- FontAwessome -->
+  <script src="https://kit.fontawesome.com/f50987608b.js" crossorigin="anonymous" defer></script>
+  <!-- End Fontawessome -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="scss/style.css" />
-    <!-- End CSS -->
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- End Aos -->
 
-    <!-- Favicon -->
-    <link rel="preload" href="img/favicon.svg" as="image" />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-    <!-- End Favicon -->
-    <link rel="canonical" href="https://kassio07.github.io/Portfolio/" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/style.css" />
+  <!-- End CSS -->
 
-    <title>Meu Portfólio | Projetos e Trajetória Profissional</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="preload" href="img/favicon.svg" as="image" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <!-- End Favicon -->
+  <link rel="canonical" href="https://kassio07.github.io/Portfolio/" />
 
-  <body>
-    <!-- Container geral do site -->
-    <div class="containerGeral">
-      <div class="hamburguerMenu">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <!-- Inicio header -->
-      <header>
-        <!-- Inicio menu lateral -->
-        <nav>
-          <div class="menuLateral-container">
-            <div class="menuIMG">
-              <div class="imgContainer">
-                <img src="img/imagem-perfil.png" alt="foto de perfil" />
-              </div>
-              <span class="menuNome">Kassio Kennedy</span>
+  <title>Meu Portfólio | Projetos e Trajetória Profissional</title>
+</head>
+
+<body>
+  <!-- Container geral do site -->
+  <div class="containerGeral">
+    <div class="hamburguerMenu">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <!-- Inicio header -->
+    <header>
+      <!-- Inicio menu lateral -->
+      <nav>
+        <div class="menuLateral-container">
+          <div class="menuIMG">
+            <div class="imgContainer">
+              <img src="img/imagem-perfil.png" alt="foto de perfil" />
             </div>
-            <div class="menuIcons">
-              <ul>
-                <li>
-                  <a href="https://www.instagram.com/kaess_07/" target="_blank"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#home"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#home"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/kassio07kennedy/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="menuLinks">
-              <ul>
-                <li>
-                  <a href="#home" title="Ir para home"
-                    ><i class="fa-solid fa-house"></i>Home</a
-                  >
-                </li>
-                <li>
-                  <a href="#about" title="Ir para sobre"
-                    ><i class="fa-solid fa-user"></i>Sobre</a
-                  >
-                </li>
-                <li>
-                  <a href="#skills" title="Ir para Habilidades"
-                    ><i class="fa-solid fa-file"></i>Skills</a
-                  >
-                </li>
-                <li>
-                  <a href="#resumo" title="Ir para o resumo do site"
-                    ><i class="fa-solid fa-list-check"></i>Resumo</a
-                  >
-                </li>
-                <li>
-                  <a href="#portifolio" title="Ir para o portfólio"
-                    ><i class="fa-solid fa-image"></i>Portfólio</a
-                  >
-                </li>
-                <li>
-                  <a href="#contato" title="Ir para os contatos"
-                    ><i class="fa-solid fa-phone"></i>Contato</a
-                  >
-                </li>
-              </ul>
-            </div>
+            <span class="menuNome">Kassio Kennedy</span>
           </div>
-        </nav>
-        <!-- Fim menu lateral -->
-      </header>
-      <!-- Fim header -->
-      <!-- Inicio Main -->
-      <main>
-        <!-- titulo geral da página -->
-        <div class="imgTopo" id="home">
-          <div class="eventTop"></div>
-          <div class="opac"></div>
-          <div class="titleTop">
-            <h1>Engenharia de Software</h1>
-            <span>Desenvolvimento Web <i class="fa-solid fa-code"></i></span>
+          <div class="menuIcons">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/kaess_07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#home"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/kassio07kennedy/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="menuLinks">
+            <ul>
+              <li>
+                <a href="#home" title="Ir para home"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li>
+                <a href="#about" title="Ir para sobre"><i class="fa-solid fa-user"></i>Sobre</a>
+              </li>
+              <li>
+                <a href="#skills" title="Ir para Habilidades"><i class="fa-solid fa-file"></i>Skills</a>
+              </li>
+              <li>
+                <a href="#resumo" title="Ir para o resumo do site"><i class="fa-solid fa-list-check"></i>Resumo</a>
+              </li>
+              <li>
+                <a href="#portifolio" title="Ir para o portfólio"><i class="fa-solid fa-image"></i>Portfólio</a>
+              </li>
+              <li>
+                <a href="#contato" title="Ir para os contatos"><i class="fa-solid fa-phone"></i>Contato</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- Fim titulo geral página  -->
-        <!-- Seccao About -->
-        <section
-          class="about"
-          id="about"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
-          <div class="container">
-            <div class="title">
-              <h2 class="titleSection">Sobre</h2>
-              <p class="subTitleSection">
-                Sou estudante de Engenharia de Software e apaixonado pelo mundo
-                da tecnologia. Meu principal objetivo é atuar como desenvolvedor
-                web, criando soluções inovadoras e otimizadas para a web.
-              </p>
+      </nav>
+      <!-- Fim menu lateral -->
+    </header>
+    <!-- Fim header -->
+    <!-- Inicio Main -->
+    <main>
+      <!-- titulo geral da página -->
+      <div class="imgTopo" id="home">
+        <div class="eventTop"></div>
+        <div class="opac"></div>
+        <div class="titleTop">
+          <h1>Engenharia de Software</h1>
+          <span>Desenvolvimento Web <i class="fa-solid fa-code"></i></span>
+        </div>
+      </div>
+      <!-- Fim titulo geral página  -->
+      <!-- Seccao About -->
+      <section class="about" id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="container">
+          <div class="title">
+            <h2 class="titleSection">Sobre</h2>
+            <p class="subTitleSection">
+              Sou estudante de Engenharia de Software e apaixonado pelo mundo
+              da tecnologia. Meu principal objetivo é atuar como desenvolvedor
+              web, criando soluções inovadoras e otimizadas para a web.
+            </p>
+          </div>
+          <div class="aboutInfo-container">
+            <div class="about-col1">
+              <img src="img/info-web.jpg" alt="Imagem mostrando a montagem de um computador" />
             </div>
-            <div class="aboutInfo-container">
-              <div class="about-col1">
-                <img
-                  src="img/info-web.jpg"
-                  alt="Imagem mostrando a montagem de um computador"
-                />
+            <div class="about-col2">
+              <div class="titleH2">
+                Web developer
+                <img src="img/codeIcon.svg" alt="Icone de codigo - par de chaves" />
               </div>
-              <div class="about-col2">
-                <div class="titleH2">
-                  Web developer
-                  <img
-                    src="img/codeIcon.svg"
-                    alt="Icone de codigo - par de chaves"
-                  />
+              <div class="listSobre">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>HTML</strong>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>CSS</strong>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>CSS / SCSS</strong>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>BOOTSTRAP</strong>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>JAVASCRIPT</strong>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>PHP</strong>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>MYSQL</strong>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i><strong>JQUERY</strong>
+                  </li>
+                </ul>
+              </div>
+              <div class="aboutText">
+                <p>
+                  Olhando essa foto, você deve estar se perguntando: o que o
+                  desenvolvimento web tem a ver com a montagem de um PC? A
+                  resposta é simples: foi exatamente nesse momento que minha
+                  paixão pela tecnologia começou.
+                </p>
+                <br />
+                <p>
+                  Sempre gostei de entender como as coisas funcionam por
+                  dentro, e montar meu próprio computador foi um dos primeiros
+                  desafios que enfrentei. Desde a escolha das peças até a
+                  configuração do sistema, cada etapa me ensinou algo valioso
+                  sobre lógica, desempenho e resolução de problemas.
+                </p>
+                <br />
+                <p>
+                  Hoje, sou um desenvolvedor web apaixonado por criar
+                  interfaces funcionais e intuitivas. Cada projeto que
+                  desenvolvo é como montar um PC: combinando diferentes
+                  tecnologias, otimizando o desempenho e garantindo que tudo
+                  funcione perfeitamente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+      <!-- Habilidades -->
+      <section class="skillsConatiner" id="skills" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="container">
+          <div class="title">
+            <h2 class="titleSection">Skills</h2>
+            <p class="subTitleSection">
+              Abaixo estão algumas das principais tecnologias com as quais
+              trabalho:
+            </p>
+          </div>
+          <!-- Accordion -->
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordeon(0)">
+                Front-End <i class="fa-solid fa-caret-up"></i>
+              </div>
+              <div class="accordion-content">
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>HTML</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item"></div>
+                  </div>
                 </div>
-                <div class="listSobre">
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>HTML</strong>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>CSS</strong>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>CSS / SCSS</strong>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>BOOTSTRAP</strong>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>JAVASCRIPT</strong>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>PHP</strong>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>MYSQL</strong>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-down"></i
-                      ><strong>JQUERY</strong>
-                    </li>
-                  </ul>
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>CSS / SCSS</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item css-item"></div>
+                  </div>
                 </div>
-                <div class="aboutText">
-                  <p>
-                    Olhando essa foto, você deve estar se perguntando: o que o
-                    desenvolvimento web tem a ver com a montagem de um PC? A
-                    resposta é simples: foi exatamente nesse momento que minha
-                    paixão pela tecnologia começou.
-                  </p>
-                  <br />
-                  <p>
-                    Sempre gostei de entender como as coisas funcionam por
-                    dentro, e montar meu próprio computador foi um dos primeiros
-                    desafios que enfrentei. Desde a escolha das peças até a
-                    configuração do sistema, cada etapa me ensinou algo valioso
-                    sobre lógica, desempenho e resolução de problemas.
-                  </p>
-                  <br />
-                  <p>
-                    Hoje, sou um desenvolvedor web apaixonado por criar
-                    interfaces funcionais e intuitivas. Cada projeto que
-                    desenvolvo é como montar um PC: combinando diferentes
-                    tecnologias, otimizando o desempenho e garantindo que tudo
-                    funcione perfeitamente.
-                  </p>
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>Bootstrap</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item boot-item"></div>
+                  </div>
+                </div>
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>JavaScript</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item js-item"></div>
+                  </div>
+                </div>
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>JQuery</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item jquery-item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordeon(1)">
+                Back-End <i class="fa-solid fa-caret-up"></i>
+              </div>
+              <div class="accordion-content">
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>PHP</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item php-item"></div>
+                  </div>
+                </div>
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>MYSQL</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item mysql-item"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- End About -->
-        <!-- Habilidades -->
-        <section
-          class="skillsConatiner"
-          id="skills"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
-          <div class="container">
-            <div class="title">
-              <h2 class="titleSection">Skills</h2>
-              <p class="subTitleSection">
-                Abaixo estão algumas das principais tecnologias com as quais
-                trabalho:
-              </p>
-            </div>
-            <!-- Accordion -->
-            <div class="accordion">
-              <div class="accordion-item">
-                <div class="accordion-header" onclick="toggleAccordeon(0)">
-                  Front-End <i class="fa-solid fa-caret-up"></i>
-                </div>
-                <div class="accordion-content">
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>HTML</span>
-                      <span>95%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item"></div>
-                    </div>
-                  </div>
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>CSS / SCSS</span>
-                      <span>90%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item css-item"></div>
-                    </div>
-                  </div>
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>Bootstrap</span>
-                      <span>85%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item boot-item"></div>
-                    </div>
-                  </div>
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>JavaScript</span>
-                      <span>70%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item js-item"></div>
-                    </div>
-                  </div>
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>JQuery</span>
-                      <span>70%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item jquery-item"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <div class="accordion-header" onclick="toggleAccordeon(1)">
-                  Back-End <i class="fa-solid fa-caret-up"></i>
-                </div>
-                <div class="accordion-content">
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>PHP</span>
-                      <span>70%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item php-item"></div>
-                    </div>
-                  </div>
-                  <div class="load-container">
-                    <div class="load-text">
-                      <span>MYSQL</span>
-                      <span>70%</span>
-                    </div>
-                    <div class="load">
-                      <div class="load-item mysql-item"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Accordion -->
+          <!-- End Accordion -->
+        </div>
+      </section>
+      <!-- End Habilidades -->
+      <!-- Seccao Resumo -->
+      <section class="section-qualificacao" id="resumo" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="container">
+          <div class="title">
+            <h2 class="titleSection">Resumo</h2>
+            <p class="subTitleSection">
+              Ao longo da minha jornada, busquei sempre aprender e me
+              aprimorar, aceitando desafios que me permitiram crescer tanto
+              profissionalmente quanto pessoalmente.
+            </p>
           </div>
-        </section>
-        <!-- End Habilidades -->
-        <!-- Seccao Resumo -->
-        <section
-          class="section-qualificacao"
-          id="resumo"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
-          <div class="container">
-            <div class="title">
-              <h2 class="titleSection">Resumo</h2>
-              <p class="subTitleSection">
-                Ao longo da minha jornada, busquei sempre aprender e me
-                aprimorar, aceitando desafios que me permitiram crescer tanto
-                profissionalmente quanto pessoalmente.
-              </p>
+          <div class="qualification-content">
+            <div class="qualification-titles">
+              <span><i class="fa-solid fa-graduation-cap"></i>Formação</span>
+              <span><i class="fa-solid fa-briefcase"></i>Trabalhos</span>
             </div>
-            <div class="qualification-content">
-              <div class="qualification-titles">
-                <span><i class="fa-solid fa-graduation-cap"></i>Formação</span>
-                <span><i class="fa-solid fa-briefcase"></i>Trabalhos</span>
+            <div class="qualification-data">
+              <div class="qualification-text">
+                <h3>Eng. de Software</h3>
+                <span>SP - Unicid</span>
+                <span><i class="fa-solid fa-calendar-days"></i>Jul. 2021 - Jul.
+                  2025</span>
               </div>
-              <div class="qualification-data">
-                <div class="qualification-text">
-                  <h3>Eng. de Software</h3>
-                  <span>SP - Unicid</span>
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i>Jul. 2021 - Jul.
-                    2025</span
-                  >
-                </div>
-                <div class="qualification-quite">
-                  <span class="qualification-circle"></span>
-                  <span class="qualification-line"></span>
-                </div>
-                <div class="qualification-white"></div>
+              <div class="qualification-quite">
+                <span class="qualification-circle"></span>
+                <span class="qualification-line"></span>
               </div>
-              <div class="qualification-data">
-                <div class="qualification-white"></div>
-                <div class="qualification-quite">
-                  <span class="qualification-circle"></span>
-                  <span class="qualification-line"></span>
-                </div>
-                <div class="qualification-text">
-                  <h3>Uniplena</h3>
-                  <span>T.I / Desenvolvimento web</span>
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i>Fev. 2024 -
-                    Atual</span
-                  >
-                </div>
+              <div class="qualification-white"></div>
+            </div>
+            <div class="qualification-data">
+              <div class="qualification-white"></div>
+              <div class="qualification-quite">
+                <span class="qualification-circle"></span>
+                <span class="qualification-line"></span>
               </div>
-              <div class="qualification-data">
-                <div class="qualification-text">
-                  <h3>Web - Developer</h3>
-                  <span>SP - IMPACTA</span>
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i>Fev. 2023 - Jan.
-                    2024</span
-                  >
-                </div>
-                <div class="qualification-quite">
-                  <span class="qualification-circle"></span>
-                  <span class="qualification-line"></span>
-                </div>
-                <div class="qualification-white"></div>
+              <div class="qualification-text">
+                <h3>Uniplena</h3>
+                <span>T.I / Desenvolvimento web</span>
+                <span><i class="fa-solid fa-calendar-days"></i>Fev. 2024 -
+                  Atual</span>
               </div>
-              <div class="qualification-data">
-                <div class="qualification-white"></div>
-                <div class="qualification-quite">
-                  <span class="qualification-circle"></span>
-                  <span class="qualification-line"></span>
-                </div>
-                <div class="qualification-text">
-                  <h3>Q7 Informática</h3>
-                  <span>Suporte técnico</span>
-                  <span
-                    ><i class="fa-solid fa-calendar-days"></i>Mar. 2022 - Mar.
-                    2023</span
-                  >
-                </div>
+            </div>
+            <div class="qualification-data">
+              <div class="qualification-text">
+                <h3>Web - Developer</h3>
+                <span>SP - IMPACTA</span>
+                <span><i class="fa-solid fa-calendar-days"></i>Fev. 2023 - Jan.
+                  2024</span>
+              </div>
+              <div class="qualification-quite">
+                <span class="qualification-circle"></span>
+                <span class="qualification-line"></span>
+              </div>
+              <div class="qualification-white"></div>
+            </div>
+            <div class="qualification-data">
+              <div class="qualification-white"></div>
+              <div class="qualification-quite">
+                <span class="qualification-circle"></span>
+                <span class="qualification-line"></span>
+              </div>
+              <div class="qualification-text">
+                <h3>Q7 Informática</h3>
+                <span>Suporte técnico</span>
+                <span><i class="fa-solid fa-calendar-days"></i>Mar. 2022 - Mar.
+                  2023</span>
               </div>
             </div>
           </div>
-        </section>
-        <!-- End resumo -->
-        <!-- Seccao Portfólio -->
-        <section
-          class="portifolio"
-          id="portifolio"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
-          <div class="container">
-            <div class="title">
-              <h2 class="titleSection">Portfólio</h2>
-              <p class="subTitleSection">
-                Ao longo da minha jornada, busquei sempre aprender e me
-                aprimorar, aceitando desafios que me permitiram crescer tanto
-                profissionalmente quanto pessoalmente.
-              </p>
+        </div>
+      </section>
+      <!-- End resumo -->
+      <!-- Seccao Portfólio -->
+      <section class="portifolio" id="portifolio" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="container">
+          <div class="title">
+            <h2 class="titleSection">Portfólio</h2>
+            <p class="subTitleSection">
+              Ao longo da minha jornada, busquei sempre aprender e me
+              aprimorar, aceitando desafios que me permitiram crescer tanto
+              profissionalmente quanto pessoalmente.
+            </p>
+          </div>
+          <!-- Cards -->
+          <div class="portifolio-container">
+            <div class="port-titles">
+              <span><a href="#" class="link" data-target="conteudo1">Pessoal</a></span>
+              <span><a href="#" class="link" data-target="conteudo2">Faculdade</a></span>
+              <span><a href="#" class="link" data-target="conteudo3">Projetos</a></span>
+              <span><a href="#" class="link" data-target="conteudo4">Hardware</a></span>
             </div>
+            <div id="conteudo1" class="port-galery-container" style="display: flex">
+              <div class="galery-item">
+                <img src="./img/telaLogin.png" alt="Imagem do card de tela de login" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Login_Bootstrap/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Tela de Login <br />
+                    HTML - CSS - JS - Bootstrap</span>
+                </div>
+              </div>
 
-            <div class="portifolio-container">
-              <div class="port-titles">
-                <span
-                  ><a href="#" class="link" data-target="conteudo1"
-                    >Pessoal</a
-                  ></span
-                >
-                <span
-                  ><a href="#" class="link" data-target="conteudo2"
-                    >Faculdade</a
-                  ></span
-                >
-                <span
-                  ><a href="#" class="link" data-target="conteudo3"
-                    >Projetos</a
-                  ></span
-                >
-                <span
-                  ><a href="#" class="link" data-target="conteudo4"
-                    >Hardware</a
-                  ></span
-                >
-              </div>
-              <div
-                id="conteudo1"
-                class="port-galery-container"
-                style="display: flex"
-              >
-                <div class="galery-item">
-                  <img
-                    src="./img/telaLogin.png"
-                    alt="Imagem do card de tela de login"
-                  />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Login_Bootstrap/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Tela de Login <br />
-                      HTML - CSS - JS - Bootstrap</span
-                    >
-                  </div>
-                </div>
-             
-                <div class="galery-item">
-                  <img src="./img/medCenter.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Landing-Page/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Medicenter <br />
-                      HTML - CSS - JS</span
-                    >
-                  </div>
+              <div class="galery-item">
+                <img src="./img/medCenter.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Landing-Page/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Medicenter <br />
+                    HTML - CSS - JS / Puro</span>
                 </div>
               </div>
-              <div id="conteudo2" class="port-galery-container">
-             <!-- Faculdade -->
+              <div class="galery-item">
+                <img src="./img/bateria.jpg" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kaesssantos.github.io/Bateria/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Bateria<br />
+                    HTML - CSS - JS</span>
+                </div>
               </div>
-              <div id="conteudo3" class="port-galery-container">
-                <div class="galery-item">
-                  <img src="./img/alocacao.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://www.uniplenagraduacao.com.br/locacao-de-salas-de-aula/home"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Alocacao de salas <br />
-                      HTML - Bootstrap - CSS - JS - PHP</span
-                    >
-                  </div>
+            </div>
+            <div id="conteudo2" class="port-galery-container">
+              <!-- Faculdade -->
+            </div>
+            <div id="conteudo3" class="port-galery-container">
+              <div class="galery-item">
+                <img src="./img/alocacao.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://www.uniplenagraduacao.com.br/locacao-de-salas-de-aula/home" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Alocacao de salas <br />
+                    HTML - Bootstrap - CSS - JS - PHP</span>
                 </div>
-                <div class="galery-item">
-                    <img src="./img/imobiliarios.webp" alt="Imagem do card imobiliarios" />
-                    <div class="item-text">
-                      <span
-                        ><a
-                          href="https://uniplenagraduacao.com.br/Site/curso-negocios-imobiliarios.php/home"
-                          target="_blank"
-                          ><i class="fa-solid fa-link"></i></a
-                      ></span>
-                      <span
-                        >Imobiliários Curso <br />
-                        HTML - CSS - Bootstrap - PHP</span
-                      >
-                    </div>
-                  </div>
               </div>
-              <div id="conteudo4" class="port-galery-container">
-                <div class="galery-item">
-                  <img src="./img/telaLogin.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Login_Bootstrap/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Tela de Login <br />
-                      HTML - CSS - JS - Bootstrap</span
-                    >
-                  </div>
+              <div class="galery-item">
+                <img src="./img/imobiliarios.webp" alt="Imagem do card imobiliarios" />
+                <div class="item-text">
+                  <span><a href="https://uniplenagraduacao.com.br/Site/curso-negocios-imobiliarios.php/home"
+                      target="_blank"><i class="fa-solid fa-link"></i></a></span>
+                  <span>Imobiliários Curso <br />
+                    HTML - CSS - Bootstrap - PHP</span>
                 </div>
-                <div class="galery-item">
-                  <img src="./img/nsClean.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Lavanderia/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Ns Clean <br />
-                      HTML - CSS - JS</span
-                    >
-                  </div>
+              </div>
+            </div>
+            <div id="conteudo4" class="port-galery-container">
+              <div class="galery-item">
+                <img src="./img/telaLogin.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Login_Bootstrap/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Tela de Login <br />
+                    HTML - CSS - JS - Bootstrap</span>
                 </div>
-                <div class="galery-item">
-                  <img src="./img/medCenter.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Landing-Page/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Medicenter <br />
-                      HTML / CSS PURO - JS</span
-                    >
-                  </div>
+              </div>
+              <div class="galery-item">
+                <img src="./img/nsClean.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Lavanderia/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Ns Clean <br />
+                    HTML - CSS - JS</span>
                 </div>
-                <div class="galery-item">
-                  <img src="./img/nsClean.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Lavanderia/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Ns Clean <br />
-                      HTML - css - js</span
-                    >
-                  </div>
+              </div>
+              <div class="galery-item">
+                <img src="./img/medCenter.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Landing-Page/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Medicenter <br />
+                    HTML / CSS PURO - JS</span>
                 </div>
-                <div class="galery-item">
-                  <img src="./img/nsClean.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Lavanderia/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Ns Clean <br />
-                      HTML - CSS - JS</span
-                    >
-                  </div>
+              </div>
+              <div class="galery-item">
+                <img src="./img/nsClean.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Lavanderia/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Ns Clean <br />
+                    HTML - css - js</span>
                 </div>
-                <div class="galery-item">
-                  <img src="./img/nsClean.png" alt="" />
-                  <div class="item-text">
-                    <span
-                      ><a
-                        href="https://kassio07.github.io/Lavanderia/"
-                        target="_blank"
-                        ><i class="fa-solid fa-link"></i></a
-                    ></span>
-                    <span
-                      >Ns Clean <br />
-                      HTML - CSS - JS</span
-                    >
-                  </div>
+              </div>
+              <div class="galery-item">
+                <img src="./img/nsClean.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Lavanderia/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Ns Clean <br />
+                    HTML - CSS - JS</span>
+                </div>
+              </div>
+              <div class="galery-item">
+                <img src="./img/nsClean.png" alt="" />
+                <div class="item-text">
+                  <span><a href="https://kassio07.github.io/Lavanderia/" target="_blank"><i
+                        class="fa-solid fa-link"></i></a></span>
+                  <span>Ns Clean <br />
+                    HTML - CSS - JS</span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-    <script src="./js/script.js"></script>
-  </body>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

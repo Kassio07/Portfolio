@@ -59,30 +59,41 @@ links.forEach((link) => {
 
 
 // Evento na sessão de portfólio - evento de click e mostra os itens relacionado
+// Seleciona todos os links e mapea eles.
 document.querySelectorAll(".link").forEach((link) => {
   // Quando clicar no alvo faz esse evento
+
   link.addEventListener("click", function (event) {
     event.preventDefault(); // Evita o evento padrão do click
 
-    let target = this.getAttribute("data-target"); // seleciona o alvo do click e pega o atributo
-    let selecaoAlvo = document.getElementById(target); // Seleciona o elemento uma única vez
-    
+    // Limpa a class active de todos os link
+    document.querySelectorAll(".link").forEach((el) =>{
+      el.classList.remove("active");
+    })
 
-    //Caso o elemento não exista
+    // Adiciona a class active ao link clicado
+    this.classList.add("active");
+
+    
+    // seleciona o alvo do click e pega o atributo
+    let target = this.getAttribute("data-target");
+    // Seleciona o elemento uma única vez
+    let selecaoAlvo = document.getElementById(target);
+
     if (!selecaoAlvo) {
-      return;
+      return
     }
 
     // Esconde todos os conteúdos
     document.querySelectorAll(".port-galery-container").forEach((div) => {
       div.style.display = "none";
       div.style.opacity = "0";
-    }); 
+    });
 
     //Exibe o elemento alvo com a transição suave
     selecaoAlvo.style.display = "flex";
     setTimeout(() => {
       selecaoAlvo.style.opacity = "1";
-    }, 300);
+    }, 200);
   });
 });
