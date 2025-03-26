@@ -62,9 +62,10 @@ links.forEach((link) => {
 // Seleciona todos os links e mapea eles.
 document.querySelectorAll(".link").forEach((link) => {
   // Quando clicar no alvo faz esse evento
-
+  
   link.addEventListener("click", function (event) {
-    event.preventDefault(); // Evita o evento padrão do click
+    // Evita o evento padrão do click
+    event.preventDefault(); 
 
     // Limpa a class active de todos os link
     document.querySelectorAll(".link").forEach((el) =>{

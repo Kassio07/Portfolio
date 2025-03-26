@@ -14,18 +14,20 @@
         gap: 40px;
 
         span {
-            .link{
+            .link {
                 font-size: 1rem;
             }
         }
     }
-    
-    .link{
+
+    .link {
         color: $gray-dark;
         transition: color 0.3s ease;
-        &.active{
+
+        &.active {
             color: $tertiary-colorLight;
         }
+
         &:hover {
             color: $tertiary-colorLight;
         }
@@ -34,7 +36,7 @@
     .port-galery-container {
         width: 100%;
         display: none;
-        justify-content:center; 
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
@@ -43,10 +45,12 @@
             display: inline-block;
             position: relative;
             flex: 1;
+            padding: 5px;
             min-width: 300px;
             max-width: 400px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
             overflow: hidden;
+
             img {
                 display: block;
                 width: 100%;
@@ -56,13 +60,13 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                width: 100%;
-                height: 100%;
+                width: 97%;
+                height: 97%;
                 background: rgba(0, 0, 0, 0.769);
                 transform: translate(-50%, -50%);
                 opacity: 0;
-                transition: opacity 0.3s ease-in-out;
-                
+                transition: opacity 0.5s ease-in-out;
+
                 span {
                     color: $primary-light;
 
@@ -76,6 +80,7 @@
                         font-size: 1.5rem;
                         cursor: pointer;
                         z-index: 99;
+
                         a {
                             color: $primary-light;
                         }
@@ -98,6 +103,7 @@
 
             &:hover .item-text {
                 opacity: 1;
+
             }
         }
     }
@@ -118,19 +124,21 @@
             }
         }
 
-        .port-titles{
+        .port-titles {
             gap: 12px;
             align-items: center;
-            
-            span{
-               .link{
-                font-size: 0.8rem;
-               }
+
+            span {
+                .link {
+                    font-size: 0.8rem;
+                }
             }
         }
+
         .link {
             color: $gray-dark;
             transition: 0.5s;
+
             &:hover {
                 color: $tertiary-colorLight;
             }
@@ -172,8 +180,8 @@
         .port-galery-container {
 
             .galery-item {
-                min-width:330px;
-                max-width:400px;
+                min-width: 330px;
+                max-width: 400px;
             }
         }
     }
