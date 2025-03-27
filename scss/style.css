@@ -631,33 +631,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .portifolio-container .port-galery-container .galery-item:hover .item-text {
   opacity: 1;
 }
-.portifolio-container .port-galery-container .galery-item .iconLinkMobil {
-  display: none;
-  position: absolute;
-  color: #00c9d2;
-  cursor: pointer;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  z-index: 999;
-}
 
 @media (max-width: 576px) {
   .portifolio-container .port-galery-container .galery-item {
     min-width: 330px;
     max-width: 330px;
-  }
-  .portifolio-container .port-galery-container .galery-item .iconLinkMobil {
-    display: flex;
-    position: absolute;
-    color: #00c9d2;
-    cursor: pointer;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    z-index: 999;
   }
   .portifolio-container .port-titles {
     gap: 12px;

@@ -106,17 +106,6 @@
 
             }
 
-            .iconLinkMobil {
-                display: none;
-                position: absolute;
-                color: $tertiary-colorLight;
-                cursor: pointer;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 25px;
-                z-index: 999;
-            }
         }
     }
 }
@@ -133,18 +122,6 @@
             .galery-item {
                 min-width: 330px;
                 max-width: 330px;
-
-                .iconLinkMobil {
-                    display: flex;
-                    position: absolute;
-                    color: $tertiary-colorLight;
-                    cursor: pointer;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 25px;
-                    z-index: 999;
-                }
             }
         }
 
