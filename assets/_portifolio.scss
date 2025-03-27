@@ -126,12 +126,12 @@
         }
 
         .port-titles {
-            gap: 12px;
+            gap: 0px;
             align-items: center;
-
+            justify-content: space-between;
             span {
                 .link {
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
             }
         }
