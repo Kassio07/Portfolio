@@ -62,20 +62,20 @@ links.forEach((link) => {
 // Seleciona todos os links e mapea eles.
 document.querySelectorAll(".link").forEach((link) => {
   // Quando clicar no alvo faz esse evento
-  
+
   link.addEventListener("click", function (event) {
     // Evita o evento padrão do click
-    event.preventDefault(); 
+    event.preventDefault();
 
     // Limpa a class active de todos os link
-    document.querySelectorAll(".link").forEach((el) =>{
+    document.querySelectorAll(".link").forEach((el) => {
       el.classList.remove("active");
     })
 
     // Adiciona a class active ao link clicado
     this.classList.add("active");
 
-    
+
     // seleciona o alvo do click e pega o atributo
     let target = this.getAttribute("data-target");
     // Seleciona o elemento uma única vez
@@ -90,11 +90,28 @@ document.querySelectorAll(".link").forEach((link) => {
       div.style.display = "none";
       div.style.opacity = "0";
     });
+    
+
+
+    selecaoAlvo.querySelectorAll(".galery-item").forEach((el) =>{
+      el.setAttribute("data-aos", "zoom-in");
+      el.style.opacity = "0";
+    });
+
+
 
     //Exibe o elemento alvo com a transição suave
     selecaoAlvo.style.display = "flex";
     setTimeout(() => {
       selecaoAlvo.style.opacity = "1";
-    }, 200);
+      selecaoAlvo.querySelectorAll(".galery-item").forEach((el) => {
+        el.style.opacity = "1"; // Agora sim, aparece suavemente
+      });
+  
+      AOS.refresh();
+    }, 100);
+
+
   });
 });
+
