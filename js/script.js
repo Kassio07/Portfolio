@@ -92,14 +92,6 @@ document.querySelectorAll(".link").forEach((link) => {
     });
     
 
-
-    selecaoAlvo.querySelectorAll(".galery-item").forEach((el) =>{
-      el.setAttribute("data-aos", "zoom-in");
-      el.style.opacity = "0";
-    });
-
-
-
     //Exibe o elemento alvo com a transição suave
     selecaoAlvo.style.display = "flex";
     setTimeout(() => {
