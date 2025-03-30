@@ -1,3 +1,6 @@
+// Adiciona mais segurança ao código evitando erros silenciosos
+"use strict";
+
 // Aos animation
 AOS.init();
 
@@ -21,9 +24,17 @@ hamburguerOff.addEventListener("click", () => {
     menu.style.display = "none";
   }
 });
-
-// Evento no top da página
-
+// Ao clicar em algum dos link no menu, esconde o menu
+let menuLinks = document.querySelectorAll(".menuLinks ul li a");
+menuLinks.forEach((el) => {
+  el.addEventListener("click", function (event) {
+    if (event) {
+      hamburguerOff.style.display = "none";
+      hamburguerOn.style.display = "block";
+      menu.style.display = "none";
+    }
+  });
+});
 
 // Accordions Skills
 function toggleAccordeon(index) {
@@ -49,14 +60,13 @@ function toggleAccordeon(index) {
   });
 }
 
-// Cancela o evento padrão do click do Acordion 
+// Cancela o evento padrão do click do Acordion
 let links = document.querySelectorAll(".accordion-header");
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
   });
 });
-
 
 // Evento na sessão de portfólio - evento de click e mostra os itens relacionado
 // Seleciona todos os links e mapea eles.
@@ -70,11 +80,10 @@ document.querySelectorAll(".link").forEach((link) => {
     // Limpa a class active de todos os link
     document.querySelectorAll(".link").forEach((el) => {
       el.classList.remove("active");
-    })
+    });
 
     // Adiciona a class active ao link clicado
     this.classList.add("active");
-
 
     // seleciona o alvo do click e pega o atributo
     let target = this.getAttribute("data-target");
@@ -82,7 +91,7 @@ document.querySelectorAll(".link").forEach((link) => {
     let selecaoAlvo = document.getElementById(target);
 
     if (!selecaoAlvo) {
-      return
+      return;
     }
 
     // Esconde todos os conteúdos
@@ -90,7 +99,6 @@ document.querySelectorAll(".link").forEach((link) => {
       div.style.display = "none";
       div.style.opacity = "0";
     });
-    
 
     //Exibe o elemento alvo com a transição suave
     selecaoAlvo.style.display = "flex";
@@ -99,11 +107,8 @@ document.querySelectorAll(".link").forEach((link) => {
       selecaoAlvo.querySelectorAll(".galery-item").forEach((el) => {
         el.style.opacity = "1"; // Agora sim, aparece suavemente
       });
-  
+
       AOS.refresh();
     }, 100);
-
-
   });
 });
-
