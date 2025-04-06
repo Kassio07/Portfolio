@@ -773,6 +773,13 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .contato .contact-form .col2 form div input[type=submit]:hover {
   background-color: rgba(0, 175, 239, 0.7882352941);
 }
+.contato .direitosA {
+  background-color: #171515;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #fff;
+  padding: 5px;
+}
 
 @media (max-width: 992px) {
   .contato {
