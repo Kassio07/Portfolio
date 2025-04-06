@@ -122,9 +122,16 @@
 }
 
 @media(max-width: 576px){
+    .contato-title{
+        h2{
+            font-size: 1.7rem;
+        }
+    }
     .contact-form{
         flex-direction: column;
+        .col1{
 
+        }
 
         .col2{
             padding-top: 35px;
@@ -135,3 +142,10 @@
         }
     }
 }
+
+@media(max-width: 420px){
+    .contato{
+        margin-top: 800px;
+    }
+}
+
