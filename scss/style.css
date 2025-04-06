@@ -638,12 +638,12 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
     max-width: 330px;
   }
   .portifolio-container .port-titles {
-    gap: 0px;
+    gap: 10px !important;
     align-items: center;
     justify-content: space-between;
   }
-  .portifolio-container .port-titles span .link {
-    font-size: 0.9rem;
+  .portifolio-container .port-titles span a {
+    font-size: 0.9rem !important;
   }
   .portifolio-container .link {
     color: #292f37;
