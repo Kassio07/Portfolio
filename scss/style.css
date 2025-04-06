@@ -800,7 +800,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 @media (max-width: 420px) {
   .contato {
-    margin-top: 800px;
+    margin-top: 700px;
   }
 }
 html {
