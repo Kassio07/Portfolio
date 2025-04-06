@@ -1,0 +1,95 @@
+.contato{
+    background-color: #0a0a0a;
+
+    .title{
+        .subTitleSection{
+            padding-bottom: 50px;
+        }
+        .titleSection{
+            color: #fff;
+        }
+    }
+    .contato-title{
+        color: #00afefb0;
+        text-align: center;
+        font-size: 1.5rem;
+
+        p{
+            font-size: 1rem;
+            color: #ffffff8f;
+        }
+    }
+    .contact-form{
+        color: #fff;
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        .ct{
+            flex: 1;
+        }
+        .col1{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.8rem;
+            color: #ffffff9c;
+
+            span{
+                i{
+                    color: #00aeef;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .col2{
+            // display: flex;
+            
+            form{
+                border: 1px solid #00afef27;
+                border-radius: 5px;
+                padding: 20px;
+                max-width: 400px;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 15px;
+                    label{
+                        color: #ffffff80;
+                        font-size: 0.8rem;
+                    }
+
+                    input{
+                        background-color: transparent;
+                        border: 1px solid  #00afef1a;
+                        border-radius: 5px;
+                        padding: 5px;
+                        color: #fff;
+                        font-size: 1rem;
+
+                       &:focus{
+                        outline: none;
+                       }
+                    }
+
+                   textarea{
+                    background-color: transparent;
+                    color: #fff;
+                    text-align: left;
+                    border: 1px solid #00afef1a;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:focus{
+                        outline: none;
+                    }
+                   }
+
+                   input[type="submit"]{
+                    background-color: #00aeef;
+                    cursor: pointer;
+                    padding: 10px 0;
+                   }
+                }
+            }
+        }
+    }
+}

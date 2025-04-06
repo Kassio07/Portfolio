@@ -24,17 +24,19 @@ hamburguerOff.addEventListener("click", () => {
     menu.style.display = "none";
   }
 });
-// Ao clicar em algum dos link no menu, esconde o menu
-let menuLinks = document.querySelectorAll(".menuLinks ul li a");
-menuLinks.forEach((el) => {
-  el.addEventListener("click", function (event) {
-    if (event) {
-      hamburguerOff.style.display = "none";
-      hamburguerOn.style.display = "block";
-      menu.style.display = "none";
-    }
+// Eaconde o menu lateral ao clicar em algum link, somente quando a largura da tela for menor ou igual a 540px
+if(window.innerWidth <= 540){
+  let menuLinks = document.querySelectorAll(".menuLinks ul li a");
+  menuLinks.forEach((el) => {
+    el.addEventListener("click", function (event) {
+      if (event) {
+        hamburguerOff.style.display = "none";
+        hamburguerOn.style.display = "block";
+        menu.style.display = "none";
+      }
+    }); 
   });
-});
+}
 
 // Accordions Skills
 function toggleAccordeon(index) {
