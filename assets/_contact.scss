@@ -117,16 +117,6 @@
 
 // Media Query
 
-@media(max-width:992px){
-    .contato{
-        margin-top: 200px;
-    }
-}
-@media(max-width:665px){
-    .contato{
-        margin-top: 1000px;
-    }
-}
 
 @media(max-width: 576px){
     .contato-title{
@@ -136,9 +126,6 @@
     }
     .contact-form{
         flex-direction: column;
-        .col1{
-
-        }
 
         .col2{
             padding-top: 35px;
@@ -150,9 +137,4 @@
     }
 }
 
-@media(max-width: 420px){
-    .contato{
-        margin-top: 700px;
-    }
-}
 

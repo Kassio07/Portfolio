@@ -542,14 +542,12 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
     margin: 0 20px;
   }
 }
-.portifolio-container {
+.portifolio .portifolio-container {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
-.portifolio-container .port-titles {
+.portifolio .portifolio-container .port-titles {
   width: 100%;
   padding-bottom: 40px;
   display: flex;
@@ -557,21 +555,21 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   justify-content: center;
   gap: 40px;
 }
-.portifolio-container .port-titles span .link {
+.portifolio .portifolio-container .port-titles span .link {
   font-size: 1rem;
   font-weight: normal;
 }
-.portifolio-container .link {
+.portifolio .portifolio-container .link {
   color: #292f37;
   transition: color 0.3s ease;
 }
-.portifolio-container .link.active {
+.portifolio .portifolio-container .link.active {
   color: #00c9d2;
 }
-.portifolio-container .link:hover {
+.portifolio .portifolio-container .link:hover {
   color: #00c9d2;
 }
-.portifolio-container .port-galery-container {
+.portifolio .portifolio-container .port-galery-container {
   width: 100%;
   display: none;
   justify-content: center;
@@ -579,7 +577,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   flex-wrap: wrap;
   gap: 10px;
 }
-.portifolio-container .port-galery-container .galery-item {
+.portifolio .portifolio-container .port-galery-container .galery-item {
   display: inline-block;
   position: relative;
   flex: 1;
@@ -589,11 +587,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   overflow: hidden;
 }
-.portifolio-container .port-galery-container .galery-item img {
+.portifolio .portifolio-container .port-galery-container .galery-item img {
   display: block;
   width: 100%;
 }
-.portifolio-container .port-galery-container .galery-item .item-text {
+.portifolio .portifolio-container .port-galery-container .galery-item .item-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -604,10 +602,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-.portifolio-container .port-galery-container .galery-item .item-text span {
+.portifolio .portifolio-container .port-galery-container .galery-item .item-text span {
   color: #fff;
 }
-.portifolio-container .port-galery-container .galery-item .item-text span:first-child {
+.portifolio .portifolio-container .port-galery-container .galery-item .item-text span:first-child {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -618,10 +616,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   cursor: pointer;
   z-index: 99;
 }
-.portifolio-container .port-galery-container .galery-item .item-text span:first-child a {
+.portifolio .portifolio-container .port-galery-container .galery-item .item-text span:first-child a {
   color: #fff;
 }
-.portifolio-container .port-galery-container .galery-item .item-text span:nth-child(2) {
+.portifolio .portifolio-container .port-galery-container .galery-item .item-text span:nth-child(2) {
   position: absolute;
   left: 55%;
   top: 75%;
@@ -630,7 +628,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   font-size: 0.9rem;
   z-index: 99;
 }
-.portifolio-container .port-galery-container .galery-item:hover .item-text {
+.portifolio .portifolio-container .port-galery-container .galery-item:hover .item-text {
   opacity: 1;
 }
 
@@ -781,16 +779,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   padding: 5px;
 }
 
-@media (max-width: 992px) {
-  .contato {
-    margin-top: 200px;
-  }
-}
-@media (max-width: 665px) {
-  .contato {
-    margin-top: 1000px;
-  }
-}
 @media (max-width: 576px) {
   .contato-title h2 {
     font-size: 1.9rem;
@@ -803,11 +791,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   }
   .contact-form .col2 form {
     width: 90vw;
-  }
-}
-@media (max-width: 420px) {
-  .contato {
-    margin-top: 700px;
   }
 }
 html {
