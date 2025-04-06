@@ -1,6 +1,5 @@
 .contato{
     background-color: #0a0a0a;
-
     .title{
         .subTitleSection{
             padding-bottom: 50px;
@@ -87,9 +86,24 @@
                     background-color: #00aeef;
                     cursor: pointer;
                     padding: 10px 0;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: #00afefc9;
+                    }
                    }
                 }
             }
         }
+    }
+}
+
+@media(max-width:992px){
+    .contato{
+        margin-top: 200px;
+    }
+}
+@media(max-width:665px){
+    .contato{
+        margin-top: 1000px;
     }
 }
