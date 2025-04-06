@@ -129,6 +129,10 @@
 
         .col1{
             width: 100%;
+            .menuIcons{
+                display: flex;
+                justify-content: center;
+            }
         }
 
         .col2{

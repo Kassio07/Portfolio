@@ -789,6 +789,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   .contact-form .col1 {
     width: 100%;
   }
+  .contact-form .col1 .menuIcons {
+    display: flex;
+    justify-content: center;
+  }
   .contact-form .col2 {
     padding-top: 35px;
   }
