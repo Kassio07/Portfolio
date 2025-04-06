@@ -38,6 +38,17 @@
                     color: #00aeef;
                     padding-right: 10px;
                 }
+
+                a{
+                    color: #ffffff9c;
+                }
+            }
+
+            .menuIcons{
+                padding-top: 20px;                
+               ul{
+                justify-content: flex-start;
+               }
             }
         }
         .col2{
@@ -97,6 +108,8 @@
     }
 }
 
+// Media Querys
+
 @media(max-width:992px){
     .contato{
         margin-top: 200px;
@@ -105,5 +118,20 @@
 @media(max-width:665px){
     .contato{
         margin-top: 1000px;
+    }
+}
+
+@media(max-width: 576px){
+    .contact-form{
+        flex-direction: column;
+
+
+        .col2{
+            padding-top: 35px;
+
+            form{
+                width: 90vw;
+            }
+        }
     }
 }

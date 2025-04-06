@@ -44,52 +44,6 @@ header .menuLateral-container .menuIMG span {
   font-size: 1.2rem;
   font-weight: 600;
 }
-header .menuLateral-container .menuIcons ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-header .menuLateral-container .menuIcons ul li {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #292f37;
-}
-header .menuLateral-container .menuIcons ul li a {
-  color: #fff;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-header .menuLateral-container .menuIcons ul li a i {
-  transition: all 0.3s;
-  transform: scale(1);
-}
-header .menuLateral-container .menuIcons ul li a:hover > i {
-  transform: scale(1.7);
-  color: #fff;
-}
-header .menuLateral-container .menuIcons ul li:nth-child(1) a:hover {
-  background-color: #fe3f31;
-}
-header .menuLateral-container .menuIcons ul li:nth-child(2) a:hover {
-  background-color: #0865fe;
-}
-header .menuLateral-container .menuIcons ul li:nth-child(3) a:hover {
-  background-color: #000;
-}
-header .menuLateral-container .menuIcons ul li:nth-child(4) a:hover {
-  background-color: #0865fe;
-}
 header .menuLateral-container .menuLinks {
   padding-top: 40px;
   padding-left: 10px;
@@ -123,6 +77,53 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   bottom: -5px;
   right: 0px;
   border-radius: 10px;
+}
+
+.menuIcons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.menuIcons ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #292f37;
+}
+.menuIcons ul li a {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.menuIcons ul li a i {
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.menuIcons ul li a:hover > i {
+  transform: scale(1.7);
+  color: #fff;
+}
+.menuIcons ul li:nth-child(1) a:hover {
+  background-color: #fe3f31;
+}
+.menuIcons ul li:nth-child(2) a:hover {
+  background-color: #0865fe;
+}
+.menuIcons ul li:nth-child(3) a:hover {
+  background-color: #000;
+}
+.menuIcons ul li:nth-child(4) a:hover {
+  background-color: #0865fe;
 }
 
 .openClose {
@@ -717,6 +718,15 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   color: #00aeef;
   padding-right: 10px;
 }
+.contato .contact-form .col1 span a {
+  color: rgba(255, 255, 255, 0.6117647059);
+}
+.contato .contact-form .col1 .menuIcons {
+  padding-top: 20px;
+}
+.contato .contact-form .col1 .menuIcons ul {
+  justify-content: flex-start;
+}
 .contato .contact-form .col2 form {
   border: 1px solid rgba(0, 175, 239, 0.1529411765);
   border-radius: 5px;
@@ -772,6 +782,17 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 @media (max-width: 665px) {
   .contato {
     margin-top: 1000px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .contact-form .col2 {
+    padding-top: 35px;
+  }
+  .contact-form .col2 form {
+    width: 90vw;
   }
 }
 html {
