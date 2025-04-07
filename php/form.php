@@ -1,6 +1,6 @@
 <?php
 
-if($_SESSION["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Pega os dados do formulário
     $nome = strip_tags(trim($_POST["nome"]));
     $email = filter_var(trim($_POST["email"]), FILTER_VALIDATE_EMAIL);
