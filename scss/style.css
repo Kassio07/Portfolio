@@ -376,6 +376,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   cursor: pointer;
   font-weight: bold;
 }
+.skillsConatiner .accordion .accordion-item .accordion-header div i {
+  padding-right: 10px;
+  font-size: 1rem;
+  color: #028CBE;
+}
 .skillsConatiner .accordion .accordion-item .accordion-header:hover {
   background-color: #e0e0e0;
 }
@@ -442,6 +447,12 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .mysql-item {
   width: 70%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .angula-item {
+  width: 30%;
+}
+.skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .node-item {
+  width: 30%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container:hover {
   background-color: rgba(230, 230, 230, 0.397);

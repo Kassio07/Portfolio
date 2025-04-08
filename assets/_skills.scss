@@ -20,6 +20,14 @@
         cursor: pointer;
         font-weight: bold;
 
+        div{
+          i{
+            padding-right: 10px;
+            font-size: 1rem;
+            color: #028CBE;
+          }
+        }
+
         &:hover {
           background-color: #e0e0e0;
         }
@@ -98,6 +106,13 @@
 
             .mysql-item {
               width: 70%;
+            }
+
+            .angula-item{
+              width: 30%;
+            }
+            .node-item{
+              width: 30%;
             }
           }
 

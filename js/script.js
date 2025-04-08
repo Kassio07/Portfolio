@@ -42,7 +42,7 @@ if(window.innerWidth <= 540){
 function toggleAccordeon(index) {
   // Selecionando os controles
   const contents = document.querySelectorAll(".accordion-content");
-  const iconAcco = document.querySelectorAll(".accordion-header i");
+  const iconAcco = document.querySelectorAll(".accordion-header .fa-caret-up");
 
   // Accordion
   contents.forEach((content, i) => {

@@ -75,23 +75,23 @@
         <div class="menuLateral-container">
           <div class="menuIMG">
             <div class="imgContainer">
-              <img src="img/imagem-perfil.png" alt="foto de perfil" />
+              <img src="img/imagem-perfil.png" alt="Foto de perfil | Kassio Kennedy" />
             </div>
             <span class="menuNome">Kassio Kennedy</span>
           </div>
           <div class="menuIcons">
             <ul>
               <li>
-                <a href="https://www.instagram.com/kaess_07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/kaess_07/" title="Ir para o perfil do Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#home" title="Ir para o perfil do facebook"><i class="fa-brands fa-facebook"></i></a>
               </li>
               <li>
-                <a href="#home"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#home" title="Ir para o perfil do Twiter"><i class="fa-brands fa-x-twitter"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/kassio07kennedy/" target="_blank"><i
+                <a href="https://www.linkedin.com/in/kassio07kennedy/" title="Ir para o perfil do Linkedin" target="_blank" rel="noopener noreferrer"><i
                     class="fa-brands fa-linkedin-in"></i></a>
               </li>
             </ul>
@@ -221,14 +221,14 @@
             <h2 class="titleSection">Skills</h2>
             <p class="subTitleSection">
               Abaixo estão algumas das principais tecnologias com as quais
-              trabalho:
+              trabalho e pretendo trabalhar:
             </p>
           </div>
           <!-- Accordion -->
           <div class="accordion">
             <div class="accordion-item">
               <div class="accordion-header" onclick="toggleAccordeon(0)">
-                Front-End <i class="fa-solid fa-caret-up"></i>
+                <div><i class="fa-solid fa-code"></i>Front-End</div> <i class="fa-solid fa-caret-up"></i>
               </div>
               <div class="accordion-content">
                 <div class="load-container">
@@ -280,7 +280,7 @@
             </div>
             <div class="accordion-item">
               <div class="accordion-header" onclick="toggleAccordeon(1)">
-                Back-End <i class="fa-solid fa-caret-up"></i>
+                <div><i class="fa-solid fa-database"></i>Back-End</div> <i class="fa-solid fa-caret-up"></i>
               </div>
               <div class="accordion-content">
                 <div class="load-container">
@@ -305,16 +305,41 @@
             </div>
             <div class="accordion-item">
               <div class="accordion-header" onclick="toggleAccordeon(2)">
-                Design <i class="fa-solid fa-caret-up"></i>
+                <div><i class="fa-solid fa-pencil"></i>Design</div> <i class="fa-solid fa-caret-up"></i>
               </div>
               <div class="accordion-content">
                 <div class="load-container">
                   <div class="load-text">
                     <span>Figma</span>
-                    <span>60%</span>
+                    <span>70%</span>
                   </div>
                   <div class="load">
                     <div class="load-item php-item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordeon(3)">
+                <div><i class="fa-solid fa-book-open-reader"></i>Radar de estudo</div> <i class="fa-solid fa-caret-up"></i>
+              </div>
+              <div class="accordion-content">
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>Angular</span>
+                    <span>30%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item angula-item"></div>
+                  </div>
+                </div>
+                <div class="load-container">
+                  <div class="load-text">
+                    <span>Node.js</span>
+                    <span>30%</span>
+                  </div>
+                  <div class="load">
+                    <div class="load-item node-item"></div>
                   </div>
                 </div>
               </div>
@@ -408,18 +433,18 @@
           <!-- Cards -->
           <div class="portifolio-container">
             <div class="port-titles">
-              <span><a href="#" class="link active" data-target="conteudo1">PESSOAL</a></span>
-              <span><a href="#" class="link" data-target="conteudo2">FACULDADE</a></span>
-              <span><a href="#" class="link" data-target="conteudo3">PROJETOS</a></span>
-              <span><a href="#" class="link" data-target="conteudo4">HARDWARE</a></span>
+              <span><a href="#" class="link active" data-target="conteudo1" title="Mostra o conteúdo dos projetos pessoais">PESSOAL</a></span>
+              <span><a href="#" class="link" data-target="conteudo2" title="Mostra o conteúdo dos projetos feito na faculdade">FACULDADE</a></span>
+              <span><a href="#" class="link" data-target="conteudo3" title="Mostra o conteúdo dos projetos profissional">PROJETOS</a></span>
+              <span><a href="#" class="link" data-target="conteudo4" title="Mostra meu projetos de Hardware">HARDWARE</a></span>
             </div>
             <!-- Pessoal -->
             <div id="conteudo1" class="port-galery-container" style="display: flex">
               <div class="galery-item" data-aos="zoom-in">
-                <img src="./img/devBarber.png" alt="" />
+                <img src="./img/devBarber.png" alt="Imagem do projeto de Barbearia" />
                 <div class="item-text">
                   <span><a href="https://kaesssantos.github.io/projeto-barberaria/" target="_blank"><i
-                        class="fa-solid fa-link"></i></a></span>
+                        class="fa-solid fa-link" title="Projeto Barbearia"></i></a></span>
                   <span>Barbearia<br />
                     HTML - CSS - SCSS - JS</span>
                 </div>
@@ -427,7 +452,7 @@
               <div class="galery-item" data-aos="zoom-in">
                 <img src="./img/pizzaria.jpg" alt="Imagem do card de tela de login" />
                 <div class="item-text">
-                  <span><a href="https://kaesssantos.github.io/E-commerce-Pizzaria/" target="_blank"><i
+                  <span><a href="https://kaesssantos.github.io/E-commerce-Pizzaria/" target="_blank" title="Projeto e-commerce | Pizzaria"><i
                         class="fa-solid fa-link"></i></a></span>
                   <span>Pizzaria<br />
                     HTML - CSS - JS - JSON</span>
@@ -436,7 +461,7 @@
               <div class="galery-item" data-aos="zoom-in">
                 <img src="./img/telaLogin.png" alt="Imagem do card de tela de login" />
                 <div class="item-text">
-                  <span><a href="https://kassio07.github.io/Login_Bootstrap/" target="_blank"><i
+                  <span><a href="https://kassio07.github.io/Login_Bootstrap/" target="_blank" title="Projeto da página de login"><i
                         class="fa-solid fa-link"></i></a></span>
                   <span>Tela de Login <br />
                     HTML - CSS - JS - Bootstrap</span>
@@ -445,27 +470,27 @@
 
 
               <div class="galery-item" data-aos="zoom-in">
-                <img src="./img/todolist.png" alt="" />
+                <img src="./img/todolist.png" alt="Imagem do projeto de to-do-list" />
                 <div class="item-text">
-                  <span><a href="https://kaesssantos.github.io/To-do-list/" target="_blank"><i
+                  <span><a href="https://kaesssantos.github.io/To-do-list/" target="_blank" title="Projeto todolist"><i
                         class="fa-solid fa-link"></i></a></span>
                   <span>To Do<br />
                     HTML - CSS - JS</span>
                 </div>
               </div>
               <div class="galery-item" data-aos="zoom-in">
-                <img src="./img/landingPage.png" alt="" />
+                <img src="./img/landingPage.png" alt="Imagem do projeto da landingPage" />
                 <div class="item-text">
-                  <span><a href="https://kaesssantos.github.io/Landing-Page/" target="_blank"><i
+                  <span><a href="https://kaesssantos.github.io/Landing-Page/" target="_blank" title="Projeto landingPage"><i
                         class="fa-solid fa-link"></i></a></span>
                   <span> Landing Page<br />
                     HTML - CSS - JS / Puro</span>
                 </div>
               </div>
               <div class="galery-item" data-aos="zoom-in">
-                <img src="./img/urna.jpg" alt="" />
+                <img src="./img/urna.jpg" alt="Imagem do projeto da Urna Eletrôncia" />
                 <div class="item-text">
-                  <span><a href="https://github.com/KaessSantos/Urna" target="_blank"><i
+                  <span><a href="https://github.com/KaessSantos/Urna" target="_blank" title="Projeto Urna Eletrônica"><i
                         class="fa-solid fa-link"></i></a></span>
                   <span>Urna Eletrônica<br />
                     HTML - CSS - JS</span>
@@ -476,10 +501,10 @@
             <!-- Faculdade -->
             <div id="conteudo2" class="port-galery-container">
               <div class="galery-item" data-aos="zoom-in">
-                <img src="./img/crm.jpg" alt="Imagem do card - Lavanderia" />
+                <img src="./img/crm.jpg" alt="Imagem do projeto CRM" />
                 <div class="item-text">
                   <span><a href="https://github.com/Kassio07/PIT-2"
-                      target="_blank"><i class="fa-solid fa-link"></i></a></span>
+                      target="_blank" title="Projeto CRM"><i class="fa-solid fa-link"></i></a></span>
                   <span>CRM - BLOG<br />
                     HTML - CSS - Bootstrap - JS - PHP - MYSQL</span>
                 </div>
@@ -491,7 +516,7 @@
               <div class="galery-item" data-aos="zoom-in">
                 <img src="./img/alocacao.png" alt="Imagem do card - Alocação de Salas de aula" />
                 <div class="item-text">
-                  <span><a href="https://www.uniplenagraduacao.com.br/locacao-de-salas-de-aula/home" target="_blank"><i
+                  <span><a href="https://www.uniplenagraduacao.com.br/locacao-de-salas-de-aula/home" target="_blank" title="Projeto Alocação de sala de aula"><i
                         class="fa-solid fa-link"></i></a></span>
                   <span>Alocacao de salas <br />
                     HTML - Bootstrap - JS - PHP</span>
@@ -501,7 +526,7 @@
                 <img src="./img/imobiliarios.jpg" alt="Imagem do card imobiliarios" />
                 <div class="item-text">
                   <span><a href="https://uniplenagraduacao.com.br/Site/curso-negocios-imobiliarios.php/home"
-                      target="_blank"><i class="fa-solid fa-link"></i></a></span>
+                      target="_blank" title="Projeto imobiliarios"><i class="fa-solid fa-link"></i></a></span>
                   <span>Imobiliários<br />
                     HTML - Bootstrap - JS - PHP</span>
                 </div>
@@ -510,16 +535,16 @@
                 <img src="./img/nsClean.png" alt="Imagem do card - Lavanderia" />
                 <div class="item-text">
                   <span><a href="https://kassio07.github.io/Lavanderia/"
-                      target="_blank"><i class="fa-solid fa-link"></i></a></span>
+                      target="_blank" title="projeto Lavanderia"><i class="fa-solid fa-link"></i></a></span>
                   <span>Lavanderia<br />
                     HTML - CSS/SCSS - JS</span>
                 </div>
               </div>
               <div class="galery-item" data-aos="zoom-in">
-                <img src="./img/crm.jpg" alt="Imagem do card - Lavanderia" />
+                <img src="./img/crm.jpg" alt="Imagem do card - CRM" />
                 <div class="item-text">
                   <span><a href="https://github.com/Kassio07/PIT-2"
-                      target="_blank"><i class="fa-solid fa-link"></i></a></span>
+                      target="_blank" title="Projeto - CRM"><i class="fa-solid fa-link"></i></a></span>
                   <span>CRM - BLOG<br />
                     HTML - CSS - Bootstrap - JS - PHP - MYSQL</span>
                 </div>
@@ -552,23 +577,23 @@
               <div class="contact-form">
                 <div class="ct col1">
                   <span><i class="fa-solid fa-location-dot"></i>São paulo - SP</span>
-                  <span><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/5511949214071" target="_blank" rel="noopener noreferrer">
+                  <span><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/5511949214071" target="_blank" rel="noopener noreferrer" title="Link direcionando para contato no whatsapp">
                     11-949214071
                   </a></span>
                   <span><i class="fa-solid fa-envelope"></i>santoskassio562@gmail.com</span>
                   <div class="menuIcons">
                     <ul>
                       <li>
-                        <a href="https://www.instagram.com/kaess_07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/kaess_07/" target="_blank" title="Icone direcionando para o perfil do instagram"><i class="fa-brands fa-instagram"></i></a>
                       </li>
                       <li>
-                        <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#home"><i class="fa-brands fa-facebook" title="Icone direcionando para o perfil do Facebook"></i></a>
                       </li>
                       <li>
-                        <a href="#home"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#home"><i class="fa-brands fa-x-twitter" title="Icone direcionando para o perfil do Twiter"></i></a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/in/kassio07kennedy/" target="_blank"><i
+                        <a href="https://www.linkedin.com/in/kassio07kennedy/" target="_blank" title="Icone direcionando para o perfil do Linkedin"><i
                             class="fa-brands fa-linkedin-in"></i></a>
                       </li>
                     </ul>
