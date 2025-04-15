@@ -74,7 +74,6 @@ links.forEach((link) => {
 // Seleciona todos os links e mapea eles.
 document.querySelectorAll(".link").forEach((link) => {
   // Quando clicar no alvo faz esse evento
-
   link.addEventListener("click", function (event) {
     // Evita o evento padrão do click
     event.preventDefault();
@@ -122,9 +121,11 @@ function msgAlert() {
     // controles dos campos do form
     let nomeInput = document.getElementsByName("nome")[0];
     let emailInput = document.getElementsByName("email")[0];
+    let textAssunto = document.getElementsByName("assunto")[0];
     // Pega o valor dos campos e formata a sting eliminando os spaços indesejados
     let nome = nomeInput.value.trim();
     let email = emailInput.value.trim();
+    let assunto = textAssunto.value.trim();
     // Variavel de erro
     let temError = false;
     // Verifica se digitou o nome
@@ -136,6 +137,10 @@ function msgAlert() {
     if(!email){
       emailInput.style.border = "1px solid red";
       temError = true;
+    }
+    // Verifica se digitou o Assunto
+    if(!assunto){
+      textAssunto.style.border = "1px solid red";
     }
     // Se tiver erro, não envia o formulario
     if(temError){

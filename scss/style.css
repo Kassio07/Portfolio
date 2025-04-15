@@ -746,6 +746,8 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 10px;
 }
 .contato .contact-form .col2 form div label {
   color: rgba(255, 255, 255, 0.5019607843);
@@ -781,6 +783,11 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 .contato .contact-form .col2 form div input[type=submit]:hover {
   background-color: rgba(0, 175, 239, 0.7882352941);
+}
+.contato .contact-form .col2 form div span {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.5rem;
 }
 .contato .direitosA {
   background-color: #171515;
