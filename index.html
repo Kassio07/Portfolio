@@ -598,22 +598,24 @@
                 </div>
             
                 <div class="ct col2">
-                  <form action="https://formsubmit.co/santoskassio562@gmail.com" method="POST" id="meuForm" onclick="msgAlert()">
+                  <form action="https://formsubmit.co/santoskassio562@gmail.com" method="POST" id="meuForm">
                     <!-- Anti Span do FormSubmit -->
                      <input type="hidden" name="_captcha" value="false">
                      <input type="hidden" name="_next" value="https://kassio07.github.io/Portfolio/index.html">
                     <div>
                       <label for="nome">Nome:</label>
-                      <input type="text" name="nome" id="nome" class="riquered">
-                      <span><i class="fa-solid fa-circle-exclamation"></i> Digite seu nome*</span>
+                      <input type="text" name="nome" id="nome" >
+                      <span class="requer"><i class="fa-solid fa-circle-exclamation"></i> Digite seu nome*</span>
                     </div>
                     <div>
                       <label for="email">E-mail:</label>
-                      <input type="email" name="email" id="email" class="riquered">
+                      <input type="email" name="email" id="email">
+                      <span class="requer"><i class="fa-solid fa-circle-exclamation"></i> Digite seu e-mail*</span>
                     </div>
                     <div>
                       <label for="assunto">Assunto:</label>
                       <textarea name="assunto" id="assunto" rows="5" placeholder="Digite sua mensagem..."></textarea>
+                      <span class="requer"><i class="fa-solid fa-circle-exclamation"></i> Digite o Assunto*</span>
                     </div>
                     <div>
                      <input type="submit" value="Enviar Mensagem">

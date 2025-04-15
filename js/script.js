@@ -117,11 +117,25 @@ document.querySelectorAll(".link").forEach((link) => {
 // Validação do formulario de contato
 function msgAlert() {
   let form = document.querySelector("#meuForm");
+  // controles dos campos do form
+  let nomeInput = document.getElementsByName("nome")[0];
+  let emailInput = document.getElementsByName("email")[0];
+  let textAssunto = document.getElementsByName("assunto")[0];
+  let requer = document.querySelectorAll(".requer");
+
+  // Ao começar digitar no campo, elimine a borda vermelha e alerta de mensagem
+  [nomeInput, emailInput, textAssunto].forEach((input, index) => {
+    input.addEventListener("input", () => {
+      input.style.border = "";
+      if (requer[index]) {
+        requer[index].classList.remove("ativo");
+      }
+    });
+  });
+
+  
+
   form.addEventListener("submit", (e) => {
-    // controles dos campos do form
-    let nomeInput = document.getElementsByName("nome")[0];
-    let emailInput = document.getElementsByName("email")[0];
-    let textAssunto = document.getElementsByName("assunto")[0];
     // Pega o valor dos campos e formata a sting eliminando os spaços indesejados
     let nome = nomeInput.value.trim();
     let email = emailInput.value.trim();
@@ -129,28 +143,39 @@ function msgAlert() {
     // Variavel de erro
     let temError = false;
     // Verifica se digitou o nome
-    if(!nome){
+
+    if (!nome) {
       nomeInput.style.border = "1px solid red";
+      if(requer[0]){
+        requer[0].classList.add("ativo")
+      }
       temError = true;
     }
+
+
     // Verifica se digitou o email
-    if(!email){
+    if (!email) {
       emailInput.style.border = "1px solid red";
+      if(requer[1]){
+        requer[1].classList.add("ativo");
+      }
       temError = true;
     }
     // Verifica se digitou o Assunto
-    if(!assunto){
+    if (!assunto) {
       textAssunto.style.border = "1px solid red";
+      if(requer[2]){
+        requer[2].classList.add("ativo");
+      }
+      temError = true;
     }
+
     // Se tiver erro, não envia o formulario
-    if(temError){
+    if (temError) {
       e.preventDefault();
+      console.log(requer);
     }
-    // Ao começar digitar no campo, elimine a borda vermelha
-    [nomeInput, emailInput].forEach((input)=>{
-      input.addEventListener('input', ()=>{
-        input.style.border = "";
-      })
-    })
   });
 }
+// Executa
+document.addEventListener("DOMContentLoaded", msgAlert);

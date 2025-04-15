@@ -1,158 +1,165 @@
-.contato{
-    background-color: #0a0a0a;
-    .title{
-        .subTitleSection{
-            padding-bottom: 50px;
-        }
-        .titleSection{
-            color: #fff;
-        }
+.contato {
+  background-color: #0a0a0a;
+  .title {
+    .subTitleSection {
+      padding-bottom: 50px;
     }
-    .contato-title{
-        color: #00afefb0;
-        text-align: center;
-        font-size: 1.5rem;
+    .titleSection {
+      color: #fff;
+    }
+  }
+  .contato-title {
+    color: #00afefb0;
+    text-align: center;
+    font-size: 1.5rem;
 
-        p{
-            font-size: 1rem;
-            color: #ffffff8f;
-        }
+    p {
+      font-size: 1rem;
+      color: #ffffff8f;
     }
-    .contact-form{
-        color: #fff;
-        padding: 30px 0px;
-        display: flex;
-        align-items: center;
-        .ct{
-            flex: 1;
+  }
+  .contact-form {
+    color: #fff;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    .ct {
+      flex: 1;
+    }
+    .col1 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: #ffffff9c;
+
+      span {
+        i {
+          color: #00aeef;
+          padding-right: 10px;
         }
-        .col1{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+
+        a {
+          color: #ffffff9c;
+        }
+      }
+
+      .menuIcons {
+        padding-top: 20px;
+        ul {
+          justify-content: flex-start;
+        }
+      }
+    }
+    .col2 {
+      // display: flex;
+
+      form {
+        border: 1px solid #00afef27;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 400px;
+        div {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 15px;
+          position: relative;
+          margin-bottom: 10px;
+          label {
+            color: #ffffff80;
             font-size: 0.8rem;
-            color: #ffffff9c;
+          }
 
-            span{
-                i{
-                    color: #00aeef;
-                    padding-right: 10px;
-                }
+          input {
+            background-color: transparent;
+            border: 1px solid #00afef1a;
+            border-radius: 5px;
+            padding: 5px;
+            color: #fff;
+            font-size: 1rem;
 
-                a{
-                    color: #ffffff9c;
-                }
+            &:focus {
+              outline: none;
             }
+          }
 
-            .menuIcons{
-                padding-top: 20px;                
-               ul{
-                justify-content: flex-start;
-               }
+          textarea {
+            background-color: transparent;
+            color: #fff;
+            text-align: left;
+            border: 1px solid #00afef1a;
+            border-radius: 5px;
+            padding: 10px;
+            &:focus {
+              outline: none;
             }
-        }
-        .col2{
-            // display: flex;
+          }
+
+          input[type="submit"] {
+            background-color: #00aeef;
+            cursor: pointer;
+            padding: 10px 0;
+            transition: all 0.5s;
+            &:hover {
+              background-color: #00afefc9;
+            }
+          }
+
+          
+          .requer {
+            position: absolute;
+            bottom: 0;
+            font-size: 0.5rem;
+            color: rgb(162, 101, 67);
+            display: none;
+            &.ativo {
+                display: block;
             
-            form{
-                border: 1px solid #00afef27;
-                border-radius: 5px;
-                padding: 20px;
-                max-width: 400px;
-                div{
-                    display: flex;
-                    flex-direction: column;
-                    padding-bottom: 15px;
-                    position: relative;
-                    margin-bottom: 10px;
-                    label{
-                        color: #ffffff80;
-                        font-size: 0.8rem;
-                    }
-
-                    input{
-                        background-color: transparent;
-                        border: 1px solid  #00afef1a;
-                        border-radius: 5px;
-                        padding: 5px;
-                        color: #fff;
-                        font-size: 1rem;
-
-                        
-
-                       &:focus{
-                        outline: none;
-                       }
-                    }
-
-                   textarea{
-                    background-color: transparent;
-                    color: #fff;
-                    text-align: left;
-                    border: 1px solid #00afef1a;
-                    border-radius: 5px;
-                    padding: 10px;
-                    &:focus{
-                        outline: none;
-                    }
-                   }
-
-                   input[type="submit"]{
-                    background-color: #00aeef;
-                    cursor: pointer;
-                    padding: 10px 0;
-                    transition: all 0.5s;
-                    &:hover{
-                        background-color: #00afefc9;
-                    }
-                   }
-
-                   span{
-                    position: absolute;
-                    bottom: 0;
-                    font-size: 0.5rem;
-                   }
-                }
             }
+           
+            i {
+              font-size: 0.7rem;
+            }
+          }
+
         }
+      }
     }
-    .direitosA{
-        background-color: #171515;
-        text-align: center;
-        font-size: 0.6rem;
-        color: #fff;
-        padding: 5px;
-    }
+  }
+  .direitosA {
+    background-color: #171515;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #fff;
+    padding: 5px;
+  }
 }
 
 // Media Query
 
-
-@media(max-width: 576px){
-    .contato-title{
-        h2{
-            font-size: 1.9rem;
-        }
+@media (max-width: 576px) {
+  .contato-title {
+    h2 {
+      font-size: 1.9rem;
     }
-    .contact-form{
-        flex-direction: column;
+  }
+  .contact-form {
+    flex-direction: column;
 
-        .col1{
-            width: 100%;
-            .menuIcons{
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        .col2{
-            padding-top: 35px;
-
-            form{
-                width: 90vw;
-            }
-        }
+    .col1 {
+      width: 100%;
+      .menuIcons {
+        display: flex;
+        justify-content: center;
+      }
     }
+
+    .col2 {
+      padding-top: 35px;
+
+      form {
+        width: 90vw;
+      }
+    }
+  }
 }
-
-

@@ -784,10 +784,18 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .contato .contact-form .col2 form div input[type=submit]:hover {
   background-color: rgba(0, 175, 239, 0.7882352941);
 }
-.contato .contact-form .col2 form div span {
+.contato .contact-form .col2 form div .requer {
   position: absolute;
   bottom: 0;
   font-size: 0.5rem;
+  color: rgb(162, 101, 67);
+  display: none;
+}
+.contato .contact-form .col2 form div .requer.ativo {
+  display: block;
+}
+.contato .contact-form .col2 form div .requer i {
+  font-size: 0.7rem;
 }
 .contato .direitosA {
   background-color: #171515;
