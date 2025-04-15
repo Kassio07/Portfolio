@@ -788,7 +788,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   position: absolute;
   bottom: 0;
   font-size: 0.5rem;
-  color: rgb(162, 101, 67);
+  color: rgb(197, 139, 108);
   display: none;
 }
 .contato .contact-form .col2 form div .requer.ativo {

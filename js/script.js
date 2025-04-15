@@ -142,8 +142,9 @@ function msgAlert() {
     let assunto = textAssunto.value.trim();
     // Variavel de erro
     let temError = false;
-    // Verifica se digitou o nome
 
+
+    // Verifica se digitou o nome
     if (!nome) {
       nomeInput.style.border = "1px solid red";
       if(requer[0]){
@@ -151,7 +152,6 @@ function msgAlert() {
       }
       temError = true;
     }
-
 
     // Verifica se digitou o email
     if (!email) {
@@ -173,7 +173,6 @@ function msgAlert() {
     // Se tiver erro, não envia o formulario
     if (temError) {
       e.preventDefault();
-      console.log(requer);
     }
   });
 }
