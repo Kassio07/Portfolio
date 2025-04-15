@@ -25,7 +25,7 @@ hamburguerOff.addEventListener("click", () => {
   }
 });
 // Eaconde o menu lateral ao clicar em algum link, somente quando a largura da tela for menor ou igual a 540px
-if(window.innerWidth <= 540){
+if (window.innerWidth <= 540) {
   let menuLinks = document.querySelectorAll(".menuLinks ul li a");
   menuLinks.forEach((el) => {
     el.addEventListener("click", function (event) {
@@ -34,7 +34,7 @@ if(window.innerWidth <= 540){
         hamburguerOn.style.display = "block";
         menu.style.display = "none";
       }
-    }); 
+    });
   });
 }
 
@@ -114,3 +114,38 @@ document.querySelectorAll(".link").forEach((link) => {
     }, 100);
   });
 });
+
+// Validação do formulario de contato
+function msgAlert() {
+  let form = document.querySelector("#meuForm");
+  form.addEventListener("submit", (e) => {
+    // controles dos campos do form
+    let nomeInput = document.getElementsByName("nome")[0];
+    let emailInput = document.getElementsByName("email")[0];
+    // Pega o valor dos campos e formata a sting eliminando os spaços indesejados
+    let nome = nomeInput.value.trim();
+    let email = emailInput.value.trim();
+    // Variavel de erro
+    let temError = false;
+    // Verifica se digitou o nome
+    if(!nome){
+      nomeInput.style.border = "1px solid red";
+      temError = true;
+    }
+    // Verifica se digitou o email
+    if(!email){
+      emailInput.style.border = "1px solid red";
+      temError = true;
+    }
+    // Se tiver erro, não envia o formulario
+    if(temError){
+      e.preventDefault();
+    }
+    // Ao começar digitar no campo, elimine a borda vermelha
+    [nomeInput, emailInput].forEach((input)=>{
+      input.addEventListener('input', ()=>{
+        input.style.border = "";
+      })
+    })
+  });
+}
