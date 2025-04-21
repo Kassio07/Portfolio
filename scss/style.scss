@@ -58,14 +58,15 @@ main {
   top: 0;
 
 }
+.hamburguerMenu{
+  display: none;
+}
 
 .containerGeral {
   display: flex;
   flex-direction: row;
 }
-.hamburguerMenu {
-  display: none;
-}
+
 
 // Media Queries 960px 
 @media (max-width: 960px) {
@@ -79,15 +80,25 @@ main {
       top: 10px;
       right: 15px;
       color: $tertiary-colorLight;
-      display: block;
       font-size: 1.8rem;
       z-index: 999;
+      display: block;
       i {
         cursor: pointer;
       }
-      .fa-xmark {
+      .fa-bars{
+        display: block;
+      }
+      .fa-xmark{
         display: none;
       }
+      .fa-bars.menuToggle{
+        display: none;
+      }
+      .fa-xmark.menuToggle{
+        display: block;
+      }
+       
     }
   }
 }

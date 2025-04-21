@@ -10,33 +10,26 @@ let hamburguerOn = document.querySelector(".fa-solid.fa-bars");
 let hamburguerOff = document.querySelector(".fa-solid.fa-xmark");
 
 // Adiciona um evento de click no botão de abrir o menu - Mobile
-hamburguerOn.addEventListener("click", () => {
-  if (hamburguerOn) {
-    hamburguerOn.style.display = "none";
-    hamburguerOff.style.display = "block";
-    menu.style.display = "block";
-    window.document.body.style.overflow = 'hidden';
-    document.querySelector("main").style.opacity = 0.6;
-  }
-});
-hamburguerOff.addEventListener("click", () => {
-  if (hamburguerOff) {
-    hamburguerOff.style.display = "none";
-    hamburguerOn.style.display = "block";
-    menu.style.display = "none";
-    window.document.body.style.overflow = '';
-    document.querySelector("main").style.opacity = 1;
-  }
-});
-// Eaconde o menu lateral ao clicar em algum link, somente quando a largura da tela for menor ou igual a 540px
-if (window.innerWidth <= 540) {
+function toggleMenu(){
+  hamburguerOff.classList.toggle('menuToggle')
+  hamburguerOn.classList.toggle('menuToggle');
+  menu.classList.toggle('openClose');
+  
+  // Impede que o body tenha scroll
+  document.body.classList.toggle('no-scroll');
+}
+hamburguerOn.addEventListener('click', toggleMenu);
+hamburguerOff.addEventListener('click', toggleMenu);
+
+// Esconde o menu lateral ao clicar em algum link
+if (window.innerWidth <= 960) {
   let menuLinks = document.querySelectorAll(".menuLinks ul li a");
   menuLinks.forEach((el) => {
     el.addEventListener("click", function (event) {
       if (event) {
         hamburguerOff.style.display = "none";
         hamburguerOn.style.display = "block";
-        menu.style.display = "none";
+        menu.classList.toggle("openClose");
       }
     });
   });
@@ -137,8 +130,6 @@ function msgAlert() {
     });
   });
 
-  
-
   form.addEventListener("submit", (e) => {
     // Pega o valor dos campos e formata a sting eliminando os spaços indesejados
     let nome = nomeInput.value.trim();
@@ -147,12 +138,11 @@ function msgAlert() {
     // Variavel de erro
     let temError = false;
 
-
     // Verifica se digitou o nome
     if (!nome) {
       nomeInput.style.border = "1px solid red";
-      if(requer[0]){
-        requer[0].classList.add("ativo")
+      if (requer[0]) {
+        requer[0].classList.add("ativo");
       }
       temError = true;
     }
@@ -160,7 +150,7 @@ function msgAlert() {
     // Verifica se digitou o email
     if (!email) {
       emailInput.style.border = "1px solid red";
-      if(requer[1]){
+      if (requer[1]) {
         requer[1].classList.add("ativo");
       }
       temError = true;
@@ -168,7 +158,7 @@ function msgAlert() {
     // Verifica se digitou o Assunto
     if (!assunto) {
       textAssunto.style.border = "1px solid red";
-      if(requer[2]){
+      if (requer[2]) {
         requer[2].classList.add("ativo");
       }
       temError = true;
@@ -183,9 +173,6 @@ function msgAlert() {
 // Executa
 document.addEventListener("DOMContentLoaded", msgAlert);
 
-
-
-// Bloquear menu lateral ao scrolar a página no mobil 
-
+// Bloquear menu lateral ao scrolar a página no mobil
 
 // Mensagem de alerta de envio de formulario

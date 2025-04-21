@@ -130,6 +130,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: block;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 960px) {
   header {
     display: none;
@@ -869,13 +873,13 @@ main {
   top: 0;
 }
 
+.hamburguerMenu {
+  display: none;
+}
+
 .containerGeral {
   display: flex;
   flex-direction: row;
-}
-
-.hamburguerMenu {
-  display: none;
 }
 
 @media (max-width: 960px) {
@@ -888,15 +892,24 @@ main {
     top: 10px;
     right: 15px;
     color: #00c9d2;
-    display: block;
     font-size: 1.8rem;
     z-index: 999;
+    display: block;
   }
   .containerGeral .hamburguerMenu i {
     cursor: pointer;
   }
+  .containerGeral .hamburguerMenu .fa-bars {
+    display: block;
+  }
   .containerGeral .hamburguerMenu .fa-xmark {
     display: none;
+  }
+  .containerGeral .hamburguerMenu .fa-bars.menuToggle {
+    display: none;
+  }
+  .containerGeral .hamburguerMenu .fa-xmark.menuToggle {
+    display: block;
   }
 }
 ::-webkit-scrollbar {
