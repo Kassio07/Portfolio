@@ -178,3 +178,10 @@ function msgAlert() {
 }
 // Executa
 document.addEventListener("DOMContentLoaded", msgAlert);
+
+
+
+// Bloquear menu lateral ao scrolar a página no mobil 
+
+
+// Mensagem de alerta de envio de formulario
