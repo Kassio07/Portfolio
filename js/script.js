@@ -11,9 +11,9 @@ let hamburguerOff = document.querySelector(".fa-solid.fa-xmark");
 
 // Adiciona um evento de click no botão de abrir o menu - Mobile
 function toggleMenu(){
-  hamburguerOff.classList.toggle('menuToggle')
-  hamburguerOn.classList.toggle('menuToggle');
   menu.classList.toggle('openClose');
+  hamburguerOn.classList.toggle('menuToggle');
+  hamburguerOff.classList.toggle('menuToggle')
   
   // Impede que o body tenha scroll
   document.body.classList.toggle('no-scroll');
