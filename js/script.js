@@ -10,16 +10,16 @@ let hamburguerOn = document.querySelector(".fa-solid.fa-bars");
 let hamburguerOff = document.querySelector(".fa-solid.fa-xmark");
 
 // Adiciona um evento de click no botão de abrir o menu - Mobile
-function toggleMenu(){
-  menu.classList.toggle('openClose');
-  hamburguerOn.classList.toggle('menuToggle');
-  hamburguerOff.classList.toggle('menuToggle')
-  
+function toggleMenu() {
+  menu.classList.toggle("openClose");
+  hamburguerOn.classList.toggle("menuToggle");
+  hamburguerOff.classList.toggle("menuToggle");
+
   // Impede que o body tenha scroll
-  document.body.classList.toggle('no-scroll');
+  document.body.classList.toggle("no-scroll");
 }
-hamburguerOn.addEventListener('click', toggleMenu);
-hamburguerOff.addEventListener('click', toggleMenu);
+hamburguerOn.addEventListener("click", toggleMenu);
+hamburguerOff.addEventListener("click", toggleMenu);
 
 // Esconde o menu lateral ao clicar em algum link
 if (window.innerWidth <= 960) {
@@ -27,14 +27,13 @@ if (window.innerWidth <= 960) {
   menuLinks.forEach((el) => {
     el.addEventListener("click", function (event) {
       if (event) {
-        hamburguerOff.style.display = "none";
-        hamburguerOn.style.display = "block";
         menu.classList.toggle("openClose");
+        hamburguerOn.classList.toggle("menuToggle");
+        hamburguerOff.classList.toggle("menuToggle");
       }
     });
   });
 }
-
 // Accordions Skills
 function toggleAccordeon(index) {
   // Selecionando os controles
