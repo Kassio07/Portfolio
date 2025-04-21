@@ -15,6 +15,8 @@ hamburguerOn.addEventListener("click", () => {
     hamburguerOn.style.display = "none";
     hamburguerOff.style.display = "block";
     menu.style.display = "block";
+    window.document.body.style.overflow = 'hidden';
+    document.querySelector("main").style.opacity = 0.6;
   }
 });
 hamburguerOff.addEventListener("click", () => {
@@ -22,6 +24,8 @@ hamburguerOff.addEventListener("click", () => {
     hamburguerOff.style.display = "none";
     hamburguerOn.style.display = "block";
     menu.style.display = "none";
+    window.document.body.style.overflow = '';
+    document.querySelector("main").style.opacity = 1;
   }
 });
 // Eaconde o menu lateral ao clicar em algum link, somente quando a largura da tela for menor ou igual a 540px
