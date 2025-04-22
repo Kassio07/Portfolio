@@ -5,9 +5,10 @@
 AOS.init();
 
 // Seleciona os botões de abrir e fechar o menu
-let menu = document.querySelector("header");
-let hamburguerOn = document.querySelector(".fa-solid.fa-bars");
-let hamburguerOff = document.querySelector(".fa-solid.fa-xmark");
+const menu = document.querySelector("header");
+const hamburguerOn = document.querySelector(".fa-solid.fa-bars");
+const hamburguerOff = document.querySelector(".fa-solid.fa-xmark");
+const menuLinks = document.querySelectorAll(".menuLinks ul li a");
 
 // Adiciona um evento de click no botão de abrir o menu - Mobile
 function toggleMenu() {
@@ -23,14 +24,9 @@ hamburguerOff.addEventListener("click", toggleMenu);
 
 // Esconde o menu lateral ao clicar em algum link
 if (window.innerWidth <= 960) {
-  let menuLinks = document.querySelectorAll(".menuLinks ul li a");
   menuLinks.forEach((el) => {
-    el.addEventListener("click", function (event) {
-      if (event) {
-        menu.classList.toggle("openClose");
-        hamburguerOn.classList.toggle("menuToggle");
-        hamburguerOff.classList.toggle("menuToggle");
-      }
+    el.addEventListener("click", function () {
+      toggleMenu();
     });
   });
 }
