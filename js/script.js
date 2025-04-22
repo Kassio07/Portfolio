@@ -61,7 +61,7 @@ function slideAbout(){
     wrapper.style.transform = `translateX(-${widthImg * courrentSlide}px)`;
   }
 
-  setInterval(nextslide, 3000);
+  setInterval(nextslide, 4000);
 
 }
 slideAbout();
