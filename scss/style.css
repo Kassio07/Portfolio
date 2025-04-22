@@ -458,9 +458,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .node-item {
   width: 30%;
 }
-.skillsConatiner .accordion .accordion-item .accordion-content .load-container:hover {
-  background-color: rgba(230, 230, 230, 0.397);
-}
 .skillsConatiner .accordion .accordion-item .accordion-content.show {
   display: block;
 }
