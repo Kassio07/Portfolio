@@ -30,6 +30,42 @@ if (window.innerWidth <= 960) {
     });
   });
 }
+
+// texto do topo com a imagem
+const texto = 'Desenvolvedor Full Stack Jr. </>';
+const fraseEl =  document.getElementById("frase");
+let i = 0;
+
+function escrever(){
+  if(i < texto.length){
+    fraseEl.textContent += texto.charAt(i);
+    i++;
+    setTimeout(escrever, 80);
+  }
+}
+escrever();
+
+
+// slide About
+function slideAbout(){
+  const wrapper = document.querySelector('.slide-wrapper');
+  let images = document.querySelectorAll('.slide-wrapper img'); // Seleciona todas as imagem
+  let widthImg = images[0].clientWidth; // Largura da imagem
+  let slideQt = images.length; // Pega a Quantidade de imagem
+  let courrentSlide = 0;
+
+  function nextslide(){
+    courrentSlide++;
+    if(courrentSlide >= slideQt) courrentSlide = 0;
+
+    wrapper.style.transform = `translateX(-${widthImg * courrentSlide}px)`;
+  }
+
+  setInterval(nextslide, 3000);
+
+}
+slideAbout();
+
 // Accordions Skills
 function toggleAccordeon(index) {
   // Selecionando os controles
