@@ -207,7 +207,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   flex-wrap: wrap;
 }
 .about .aboutInfo-container .about-col1 {
-  width: 400px;
+  flex: 0.6;
   margin-right: 30px;
   position: relative;
   overflow-x: scroll;
@@ -221,7 +221,8 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   transition: transform 0.5s ease-in-out;
 }
 .about .aboutInfo-container .about-col1 .contWidth .slide-wrapper img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   flex-shrink: 0;
 }
 .about .aboutInfo-container .about-col2 {
@@ -340,6 +341,12 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   .imgTopo span {
     font-size: 1.2rem;
   }
+  .about .aboutInfo-container .about-col1 {
+    flex: 0.8;
+    margin-right: 30px;
+    position: relative;
+    overflow-x: scroll;
+  }
 }
 @media (max-width: 768px) {
   .about .aboutInfo-container {
@@ -370,6 +377,10 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   .about .aboutInfo-container .about-col2 .listSobre {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .about .aboutInfo-container .about-col1 {
+    flex: 1;
+    margin-right: 0px;
   }
   .about .aboutInfo-container .about-col1 img {
     max-width: 100%;
