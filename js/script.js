@@ -162,7 +162,7 @@ function msgAlert() {
   });
 
   form.addEventListener("submit", (e) => {
-    // Pega o valor dos campos e formata a sting eliminando os spaços indesejados
+    // Pega o valor dos campos e formata a string eliminando os spaços indesejados
     let nome = nomeInput.value.trim();
     let email = emailInput.value.trim();
     let assunto = textAssunto.value.trim();
