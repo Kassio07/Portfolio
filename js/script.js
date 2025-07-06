@@ -150,6 +150,7 @@ function msgAlert() {
   let emailInput = document.getElementsByName("email")[0];
   let textAssunto = document.getElementsByName("assunto")[0];
   let requer = document.querySelectorAll(".requer");
+  let msgAtencao = document.querySelector(".msgAtencao");
 
   // Ao começar digitar no campo, elimine a borda vermelha e alerta de mensagem
   [nomeInput, emailInput, textAssunto].forEach((input, index) => {
@@ -195,15 +196,17 @@ function msgAlert() {
       temError = true;
     }
 
-    // Se tiver erro, não envia o formulario
+    // Se tiver erro, não envia o formulário e apresenta msg de error!
     if (temError) {
       e.preventDefault();
+      msgAtencao.style.display = 'block';
+      msgAtencao.innerText = "Por favor preencha todos os campos antes do envio!";
+      // Oculta a mensagem de texto
+      setTimeout(()=>{
+      msgAtencao.style.display = 'none';
+      }, 4000)
     }
   });
 }
 // Executa
 document.addEventListener("DOMContentLoaded", msgAlert);
-
-// Bloquear menu lateral ao scrolar a página no mobil
-
-// Mensagem de alerta de envio de formulario
