@@ -9,6 +9,15 @@ const menu = document.querySelector("header");
 const hamburguerOn = document.querySelector(".fa-solid.fa-bars");
 const hamburguerOff = document.querySelector(".fa-solid.fa-xmark");
 const menuLinks = document.querySelectorAll(".menuLinks ul li a");
+let msg = document.querySelector(".msgAtencao");
+
+// mensagem de alerta
+function msgAtencao(){
+  msg.style.display = 'block';
+  setTimeout(()=>{
+    msg.style.display = 'none';
+    }, 4000)
+}
 
 // Adiciona um evento de click no botão de abrir o menu - Mobile
 function toggleMenu() {
@@ -150,7 +159,6 @@ function msgAlert() {
   let emailInput = document.getElementsByName("email")[0];
   let textAssunto = document.getElementsByName("assunto")[0];
   let requer = document.querySelectorAll(".requer");
-  let msgAtencao = document.querySelector(".msgAtencao");
 
   // Ao começar digitar no campo, elimine a borda vermelha e alerta de mensagem
   [nomeInput, emailInput, textAssunto].forEach((input, index) => {
@@ -199,14 +207,10 @@ function msgAlert() {
     // Se tiver erro, não envia o formulário e apresenta msg de error!
     if (temError) {
       e.preventDefault();
-      msgAtencao.style.display = 'block';
-      msgAtencao.innerText = "Por favor preencha todos os campos antes do envio!";
-      // Oculta a mensagem de texto
-      setTimeout(()=>{
-      msgAtencao.style.display = 'none';
-      }, 4000)
+      msgAtencao();
+      msg.innerText = "Por favor preencha todos os campos antes do envio!";
     }
   });
 }
-// Executa
+// Executa a função do envio do formulário
 document.addEventListener("DOMContentLoaded", msgAlert);
