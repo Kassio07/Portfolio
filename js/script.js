@@ -208,8 +208,11 @@ function msgAlert() {
     if (temError) {
       e.preventDefault();
       msg.innerText = "Por favor preencha todos os campos antes do envio!";
-      msgAtencao();
-    }
+   }else{
+      msg.style.background = 'green';
+      msg.innerText = "Mensagem enviada com sucesso!";
+   }
+   msgAtencao();
   });
 }
 // Executa a função do envio do formulário
