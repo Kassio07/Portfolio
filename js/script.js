@@ -215,14 +215,20 @@ function msgAlert() {
 // Executa a função do envio do formulário
 document.addEventListener("DOMContentLoaded", msgAlert);
 
-// scroll - ir para o topo da página
-document.querySelector("#btnScrollTopo").addEventListener("click", function(){
-  let topoPagina = document.querySelector(".btnScroll-topo");
-  if(window.scrollY > '200px'){
-    topoPagina.style.display = 'flex';  
+// Mostrar btn para ir para o topo da página
+const btn = document.querySelector(".btnScroll-topo");
+window.addEventListener("scroll", function(){
+  if(window.scrollY > 400){
+    btn.style.display = 'flex';
+  }else{
+    btn.style.display = 'none';
   }
-  window.scrollTo({ 
-    top:0, 
-    behavior: "smooth"    
-  }) 
+})
+
+ // Ao clicar sobe para o topo da página
+ btn.addEventListener('click', ()=>{
+  window.scrollTo({
+    top:0,
+    behavior: "smooth"
+  })
 })
