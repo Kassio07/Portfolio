@@ -12,7 +12,7 @@
 @import "../assets/portifolio";
 @import "../assets/contact";
 
-html{
+html{ 
   scroll-behavior: smooth;
 }
 
@@ -26,7 +26,9 @@ body {
   justify-content: center;
 
   scrollbar-color: $tertiary-colorLight;
-}
+} 
+
+
 
 // Reset CSS
 
@@ -51,6 +53,8 @@ p {
   font-size: 1rem;
 }
 
+
+// main 
 main {
   background-color: $primary-light;
   width: calc(100vw - 280px);
@@ -104,7 +108,6 @@ main {
 }
 
 // Estilizando o scroll do menu e da página
-
 ::-webkit-scrollbar{
   width: 3px;
 }
@@ -117,3 +120,25 @@ main {
 ::-webkit-scrollbar-thumb:hover{
   background-color: #0b1829;
 }
+
+// Btn scroll ir para o topo da página
+.btnScroll-topo{
+  width: 35px;
+  height: 35px;  
+  background-color: rgba(71, 61, 61, 0.562); 
+  cursor: pointer; 
+  position: fixed;
+  right: 40px;
+  bottom: 5vh;
+  z-index: 999;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
+
+

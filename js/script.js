@@ -12,7 +12,7 @@ const menuLinks = document.querySelectorAll(".menuLinks ul li a");
 let msg = document.querySelector(".msgAtencao");
 
 // mensagem de alerta
-function msgAtencao(){
+function msgAtencao(){ 
   msg.style.display = 'block';
   setTimeout(()=>{
     msg.style.display = 'none';
@@ -208,12 +208,21 @@ function msgAlert() {
     if (temError) {
       e.preventDefault();
       msg.innerText = "Por favor preencha todos os campos antes do envio!";
-   }else{
-      msg.style.background = 'green';
-      msg.innerText = "Mensagem enviada com sucesso!";
-   }
+    }
    msgAtencao();
   });
 }
 // Executa a função do envio do formulário
 document.addEventListener("DOMContentLoaded", msgAlert);
+
+// scroll - ir para o topo da página
+document.querySelector("#btnScrollTopo").addEventListener("click", function(){
+  let topoPagina = document.querySelector(".btnScroll-topo");
+  if(window.scrollY > '200px'){
+    topoPagina.style.display = 'flex';  
+  }
+  window.scrollTo({ 
+    top:0, 
+    behavior: "smooth"    
+  }) 
+})
