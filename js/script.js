@@ -64,10 +64,13 @@ function slideAbout(){
   let courrentSlide = 0;
 
   function nextslide(){
-    courrentSlide++;
-    if(courrentSlide >= slideQt) courrentSlide = 0;
-
-    wrapper.style.transform = `translateX(-${widthImg * courrentSlide}px)`;
+    if(document.visibilityState === 'visible'){
+      courrentSlide++;
+      if(courrentSlide >= slideQt){ 
+        courrentSlide = 0;
+      }
+      wrapper.style.transform = `translateX(-${widthImg * courrentSlide}px)`;
+    }
   }
 
   setInterval(nextslide, 4000);
