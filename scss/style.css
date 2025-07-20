@@ -141,7 +141,6 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
 }
 main {
   position: relative;
-  overflow-x: hidden;
 }
 main .msgAtencao {
   background-color: rgb(216, 30, 30);
