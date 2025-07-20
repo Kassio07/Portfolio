@@ -210,7 +210,7 @@ function msgAlert() {
     // Se tiver erro, não envia o formulário e apresenta msg de error!
     if (temError) {
       e.preventDefault();
-      msg.innerText = "Por favor preencha todos os campos antes do envio!";
+      msg.innerText = "Por favor, preencha todos os campos!";
     }
    msgAtencao();
   });
