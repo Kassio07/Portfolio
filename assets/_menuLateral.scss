@@ -1,12 +1,13 @@
 // Menu Lateral
 
 header {
-
   .menuLateral-container {
     background-color: $primary-black;
     width: 280px;
     height: 100vh;
+    overflow-y: scroll;
     padding-top: 10px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -44,56 +45,7 @@ header {
     }
 
     // Icons Menu
-    .menuIcons {
-      ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        li {
-          width: 40px;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          background-color: $gray-dark;
-
-          a {
-            color: $primary-light;
-            font-size: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            i {
-              transition: all 0.3s;
-              transform: scale(1);
-            }
-          }
-          a:hover > i {
-            transform: scale(1.7);
-            color: #fff;
-          }
-          &:nth-child(1) a:hover{
-            background-color: #FE3F31;
-          }
-          &:nth-child(2) a:hover{
-            background-color:#0865FE;
-          }
-          &:nth-child(3) a:hover{
-            background-color: #000;
-          }
-          &:nth-child(4) a:hover{
-            background-color: #0865FE;
-          }
-        }
-      }
-    }
+  
 
     //Menu Links
     .menuLinks {
@@ -132,16 +84,75 @@ header {
       }
     }
   }
+
+  // Scroll Menu
+
 }
-.openClose{
+
+.menuIcons {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    li {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $gray-dark;
+
+      a {
+        color: $primary-light;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        i {
+          transition: all 0.3s;
+          transform: scale(1);
+        }
+      }
+      a:hover > i {
+        transform: scale(1.7);
+        color: #fff;
+      }
+      &:nth-child(1) a:hover {
+        background-color: #fe3f31;
+      }
+      &:nth-child(2) a:hover {
+        background-color: #0865fe;
+      }
+      &:nth-child(3) a:hover {
+        background-color: #000;
+      }
+      &:nth-child(4) a:hover {
+        background-color: #0865fe;
+      }
+    }
+  }
+}
+.openClose {
   display: block;
+  
+}
+
+.no-scroll{
+  overflow: hidden;
 }
 
 
 // Media Query 960px
 
-@media (max-width: 960px){
-  header{
+@media (max-width: 960px) {
+  header {
     display: none;
   }
 }

@@ -10,8 +10,9 @@
 @import "../assets/skills";
 @import "../assets/qualificacao";
 @import "../assets/portifolio";
+@import "../assets/contact";
 
-html{
+html{ 
   scroll-behavior: smooth;
 }
 
@@ -23,7 +24,11 @@ body {
 
   display: flex;
   justify-content: center;
-}
+
+  scrollbar-color: $tertiary-colorLight;
+} 
+
+
 
 // Reset CSS
 
@@ -48,6 +53,8 @@ p {
   font-size: 1rem;
 }
 
+
+// main 
 main {
   background-color: $primary-light;
   width: calc(100vw - 280px);
@@ -55,14 +62,15 @@ main {
   top: 0;
 
 }
+.hamburguerMenu{
+  display: none;
+}
 
 .containerGeral {
   display: flex;
   flex-direction: row;
 }
-.hamburguerMenu {
-  display: none;
-}
+
 
 // Media Queries 960px 
 @media (max-width: 960px) {
@@ -76,15 +84,61 @@ main {
       top: 10px;
       right: 15px;
       color: $tertiary-colorLight;
-      display: block;
       font-size: 1.8rem;
       z-index: 999;
+      display: block;
       i {
         cursor: pointer;
       }
-      .fa-xmark {
+      .fa-bars{
+        display: block;
+      }
+      .fa-xmark{
         display: none;
       }
+      .fa-bars.menuToggle{
+        display: none;
+      }
+      .fa-xmark.menuToggle{
+        display: block;
+      }
+       
     }
   }
 }
+
+// Estilizando o scroll do menu e da página
+::-webkit-scrollbar{
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #0b1624;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #0b1829;
+}
+
+// Btn scroll ir para o topo da página
+.btnScroll-topo{
+  width: 35px;
+  height: 35px;  
+  background-color: rgba(71, 61, 61, 0.562); 
+  cursor: pointer;  
+  position: fixed;
+  right: 40px;
+  bottom: 5vh;
+  z-index: 999;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
+
+
