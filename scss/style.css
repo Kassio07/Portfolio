@@ -497,7 +497,7 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   width: 70%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .boot-item {
-  width: 85%;
+  width: 90%;
 }
 .skillsConatiner .accordion .accordion-item .accordion-content .load-container .load .php-item {
   width: 70%;
@@ -639,19 +639,14 @@ header .menuLateral-container .menuLinks ul li a:hover::after {
   display: none;
   justify-content: center;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
 }
 .portifolio .portifolio-container .port-galery-container .galery-item {
   display: inline-block;
   position: relative;
-<<<<<<< HEAD
-  width: 500px;
-=======
   flex: 1;
   padding: 5px;
->>>>>>> 982e25dacf0f0e86aaa0325a7d14937b1ce4b540
   min-width: 300px;
   max-width: 400px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;

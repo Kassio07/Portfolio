@@ -12,11 +12,11 @@ const menuLinks = document.querySelectorAll(".menuLinks ul li a");
 let msg = document.querySelector(".msgAtencao");
 
 // mensagem de alerta
-function msgAtencao(){ 
-  msg.style.display = 'block';
-  setTimeout(()=>{
-    msg.style.display = 'none';
-    }, 4000)
+function msgAtencao() {
+  msg.style.display = "block";
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 4000);
 }
 
 // Adiciona um evento de click no botão de abrir o menu - Mobile
@@ -41,12 +41,12 @@ if (window.innerWidth <= 960) {
 }
 
 // texto do topo com a imagem
-const texto = 'Desenvolvedor Full Stack Jr. </>';
-const fraseEl =  document.getElementById("frase");
+const texto = "Desenvolvedor Full Stack Jr. </>";
+const fraseEl = document.getElementById("frase");
 let i = 0;
 
-function escrever(){
-  if(i < texto.length){
+function escrever() {
+  if (i < texto.length) {
     fraseEl.textContent += texto.charAt(i);
     i++;
     setTimeout(escrever, 80);
@@ -54,19 +54,18 @@ function escrever(){
 }
 escrever();
 
-
 // slide About
-function slideAbout(){
-  const wrapper = document.querySelector('.slide-wrapper');
-  let images = document.querySelectorAll('.slide-wrapper img'); // Seleciona todas as imagem
+function slideAbout() {
+  const wrapper = document.querySelector(".slide-wrapper");
+  let images = document.querySelectorAll(".slide-wrapper img"); // Seleciona todas as imagem
   let widthImg = images[0].clientWidth; // Largura da imagem
   let slideQt = images.length; // Pega a Quantidade de imagem
   let courrentSlide = 0;
 
-  function nextslide(){
-    if(document.visibilityState === 'visible'){
+  function nextslide() {
+    if (document.visibilityState === "visible") {
       courrentSlide++;
-      if(courrentSlide >= slideQt){ 
+      if (courrentSlide >= slideQt) {
         courrentSlide = 0;
       }
       wrapper.style.transform = `translateX(-${widthImg * courrentSlide}px)`;
@@ -74,7 +73,6 @@ function slideAbout(){
   }
 
   setInterval(nextslide, 4000);
-
 }
 slideAbout();
 
@@ -109,4 +107,35 @@ links.forEach((link) => {
     e.preventDefault();
   });
 });
+
+// Galery / projetos
+document.querySelectorAll(".port-titles .link").forEach((event)=>{
+  event.addEventListener("click", function(e){
+    // previne o evento
+    e.preventDefault();
+
+    // remove o active de todos os links
+    document.querySelectorAll(".port-titles .link").forEach((link)=>{
+      link.classList.remove('active');
+    })
+
+    // adicona no link clicado
+    this.classList.add('active');
+
+    // Esconde todos os conteudos
+    document.querySelectorAll(".port-galery-container").forEach((conteudo)=>{
+      conteudo.style.display ='none';
+    });
+
+    // Mostra apenas o conteudo clicado
+    const alvo = this.getAttribute('data-target');
+    const conteudoMostrar = document.getElementById(alvo);
+
+    if(conteudoMostrar){
+      conteudoMostrar.style.display = "flex";
+    }
+  })
+});
+
+
 
