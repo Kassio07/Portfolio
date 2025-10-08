@@ -3,6 +3,45 @@
 
 // Aos animation
 AOS.init();
+// Envio do formulário
+document.getElementById("meuForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // impede o envio automático
+
+  // Pega os campos
+  const nome = document.getElementById("nome");
+  const email = document.getElementById("email"); 
+  const assunto = document.getElementById("assunto");
+
+  // Pega todos os spans de erro
+  const spans = document.querySelectorAll(".requer");
+  spans.forEach((span) => (span.style.display = "none")); // esconde todos inicialmente
+
+  let valido = true; // flag pra saber se o form passou na validação
+
+  // Validação campo Nome
+  if (nome.value.trim() === "") {
+    nome.nextElementSibling.style.display = "inline";
+    valido = false;  
+  }
+
+  // Validação campo E-mail
+  if (email.value.trim() === "" || !email.value.includes("@")) {
+    email.nextElementSibling.style.display = "inline";
+    valido = false;
+  }
+
+  // Validação campo Assunto
+  if (assunto.value.trim() === "") {
+    assunto.nextElementSibling.style.display = "inline";
+    valido = false;
+  }
+
+  // Se tudo estiver ok, envia o formulário
+  if (valido) {
+    this.submit();
+  }
+});
+
 
 // Seleciona os botões de abrir e fechar o menu
 const menu = document.querySelector("header");
@@ -109,33 +148,30 @@ links.forEach((link) => {
 });
 
 // Galery / projetos
-document.querySelectorAll(".port-titles .link").forEach((event)=>{
-  event.addEventListener("click", function(e){
+document.querySelectorAll(".port-titles .link").forEach((event) => {
+  event.addEventListener("click", function (e) {
     // previne o evento
     e.preventDefault();
 
     // remove o active de todos os links
-    document.querySelectorAll(".port-titles .link").forEach((link)=>{
-      link.classList.remove('active');
-    })
+    document.querySelectorAll(".port-titles .link").forEach((link) => {
+      link.classList.remove("active");
+    });
 
     // adicona no link clicado
-    this.classList.add('active');
+    this.classList.add("active");
 
     // Esconde todos os conteudos
-    document.querySelectorAll(".port-galery-container").forEach((conteudo)=>{
-      conteudo.style.display ='none';
+    document.querySelectorAll(".port-galery-container").forEach((conteudo) => {
+      conteudo.style.display = "none";
     });
 
     // Mostra apenas o conteudo clicado
-    const alvo = this.getAttribute('data-target');
+    const alvo = this.getAttribute("data-target");
     const conteudoMostrar = document.getElementById(alvo);
 
-    if(conteudoMostrar){
+    if (conteudoMostrar) {
       conteudoMostrar.style.display = "flex";
     }
-  })
+  });
 });
-
-
-
