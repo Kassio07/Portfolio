@@ -132,12 +132,16 @@ main {
   bottom: 5vh;
   z-index: 999;
 
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
   span{
     font-size: 1.2rem;
     color: #fff;
+  }
+  &.ativo{
+    opacity: 1;
   }
 }
 

@@ -9,7 +9,7 @@ document.getElementById("meuForm").addEventListener("submit", function (e) {
 
   // Pega os campos
   const nome = document.getElementById("nome");
-  const email = document.getElementById("email"); 
+  const email = document.getElementById("email");
   const assunto = document.getElementById("assunto");
 
   // Pega todos os spans de erro
@@ -21,7 +21,7 @@ document.getElementById("meuForm").addEventListener("submit", function (e) {
   // Validação campo Nome
   if (nome.value.trim() === "") {
     nome.nextElementSibling.style.display = "inline";
-    valido = false;  
+    valido = false;
   }
 
   // Validação campo E-mail
@@ -41,7 +41,6 @@ document.getElementById("meuForm").addEventListener("submit", function (e) {
     this.submit();
   }
 });
-
 
 // Seleciona os botões de abrir e fechar o menu
 const menu = document.querySelector("header");
@@ -175,3 +174,30 @@ document.querySelectorAll(".port-titles .link").forEach((event) => {
     }
   });
 });
+
+// btn ir topo do site
+window.addEventListener("scroll", function () {
+  const scrol = document.querySelector(".btnScroll-topo");
+
+  if (window.scrollY > 400) {
+    scrol.classList.add("ativo");
+  } else {
+    scrol.classList.remove("ativo");
+  }
+});
+function toUp() {
+  const topo = document.querySelector("#btnScrollTopo");
+
+  if(!topo){return};
+  
+  topo.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
+document.addEventListener("DOMContentLoaded", toUp);
+

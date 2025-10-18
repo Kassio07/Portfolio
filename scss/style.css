@@ -984,11 +984,15 @@ main {
   right: 40px;
   bottom: 5vh;
   z-index: 999;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .btnScroll-topo span {
   font-size: 1.2rem;
   color: #fff;
+}
+.btnScroll-topo.ativo {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
